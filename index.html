@@ -17,15 +17,6 @@
         };
     </script>
 
-    <!-- Google Analytics 4 - Add your GA4 ID -->
-    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-XXXXXXXXXX');
-    </script> -->
-
     <meta name="description" content="Jacksonville's trusted epoxy flooring experts. Garage floors, metallic epoxy, commercial coatings designed for Florida's humidity and salt air. Licensed contractors, 15-year warranty. Free quotes.">
     <link rel="canonical" href="https://904epoxyfloors.com/">
 
@@ -50,7 +41,7 @@
 
     <meta name="author" content="Jacksonville Epoxy Flooring Pros">
     <meta name="robots" content="index, follow">
-    <meta name="theme-color" content="#1e3a5f">
+    <meta name="theme-color" content="#0f2744">
 
     <link rel="icon" type="image/svg+xml" href="/favicon.svg">
 
@@ -97,6 +88,11 @@
         "@type": "GeoCoordinates",
         "latitude": 30.3322,
         "longitude": -81.6557
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "127"
       }
     }
     </script>
@@ -167,56 +163,107 @@
 
     <!-- ==================== HOME PAGE ==================== -->
     <div id="page-home" class="page-container active">
-        <!-- Hero Section -->
+
+        <!-- Hero Section - Split Layout with Before/After -->
         <section class="hero">
-            <div class="hero-background" style="background-image: url('https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1920&q=80');">
-                <div class="hero-overlay"></div>
-            </div>
-
-            <!-- Floating Trust Badges -->
-            <div class="hero-floating-badges">
-                <div class="floating-badge floating-badge-left">
-                    <div class="floating-badge-icon"><i class="ph-fill ph-star"></i></div>
-                    <div class="floating-badge-content">
-                        <span class="floating-badge-number">4.9</span>
-                        <span class="floating-badge-text">Google Rating</span>
+            <div class="hero-split">
+                <!-- Content Side -->
+                <div class="hero-content-side">
+                    <div class="hero-label">
+                        <i class="ph-fill ph-seal-check"></i>
+                        <span>#1 Rated in Jacksonville</span>
+                    </div>
+                    <h1>Transform Your <span>Garage</span> in 24 Hours</h1>
+                    <p class="hero-subtitle">Premium epoxy flooring engineered for Florida's climate. We've transformed 500+ floors across Northeast Florida with coatings that last 15+ years.</p>
+                    <div class="hero-cta">
+                        <a href="#contact" class="btn btn-primary btn-lg" data-page="contact">
+                            <i class="ph ph-chat-circle-text"></i> Get Free Quote
+                        </a>
+                        <a href="tel:+19045550199" class="btn btn-outline-light btn-lg">
+                            <i class="ph ph-phone"></i> (904) 555-0199
+                        </a>
+                    </div>
+                    <div class="hero-trust">
+                        <div class="hero-trust-item">
+                            <i class="ph-fill ph-star"></i>
+                            <span>4.9 Google Rating</span>
+                        </div>
+                        <div class="hero-trust-item">
+                            <i class="ph ph-certificate"></i>
+                            <span>FL Licensed</span>
+                        </div>
+                        <div class="hero-trust-item">
+                            <i class="ph ph-shield-check"></i>
+                            <span>15-Year Warranty</span>
+                        </div>
                     </div>
                 </div>
-                <div class="floating-badge floating-badge-right">
-                    <div class="floating-badge-icon"><i class="ph-fill ph-check-circle"></i></div>
-                    <div class="floating-badge-content">
-                        <span class="floating-badge-number">500+</span>
-                        <span class="floating-badge-text">Projects Done</span>
+
+                <!-- Image Side with Before/After Slider -->
+                <div class="hero-image-side">
+                    <div class="hero-comparison">
+                        <div class="comparison-container" id="hero-comparison">
+                            <div class="comparison-after">
+                                <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1200&h=900&fit=crop" alt="Beautiful metallic epoxy floor finish">
+                            </div>
+                            <div class="comparison-before">
+                                <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1200&h=900&fit=crop" alt="Concrete floor before epoxy coating">
+                            </div>
+                            <div class="comparison-slider" id="comparison-slider"></div>
+                        </div>
+                        <div class="comparison-labels">
+                            <span class="comparison-label">Before</span>
+                            <span class="comparison-label after">After</span>
+                        </div>
                     </div>
                 </div>
             </div>
+        </section>
 
-            <div class="hero-content">
-                <div class="hero-trust-pill">
-                    <i class="ph-fill ph-seal-check"></i>
-                    <span>Trusted by 500+ Jacksonville Homeowners</span>
+        <!-- Social Proof Strip -->
+        <section class="social-proof">
+            <div class="container">
+                <div class="social-proof-inner">
+                    <div class="proof-avatars">
+                        <div class="avatar-stack">
+                            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Customer" class="avatar">
+                            <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Customer" class="avatar">
+                            <img src="https://randomuser.me/api/portraits/men/67.jpg" alt="Customer" class="avatar">
+                            <img src="https://randomuser.me/api/portraits/women/17.jpg" alt="Customer" class="avatar">
+                            <div class="avatar-count">+500</div>
+                        </div>
+                        <div class="proof-avatars-text">
+                            <strong>500+ Happy Customers</strong>
+                            Across Northeast Florida
+                        </div>
+                    </div>
+                    <div class="proof-rating">
+                        <div class="rating-stars">
+                            <i class="ph-fill ph-star"></i>
+                            <i class="ph-fill ph-star"></i>
+                            <i class="ph-fill ph-star"></i>
+                            <i class="ph-fill ph-star"></i>
+                            <i class="ph-fill ph-star"></i>
+                        </div>
+                        <div class="rating-info">
+                            <strong>4.9</strong> on Google Reviews
+                        </div>
+                    </div>
+                    <div class="proof-credentials">
+                        <div class="credential">
+                            <i class="ph ph-certificate"></i>
+                            FL Licensed
+                        </div>
+                        <div class="credential">
+                            <i class="ph ph-umbrella"></i>
+                            Fully Insured
+                        </div>
+                        <div class="credential">
+                            <i class="ph ph-shield-check"></i>
+                            15-Year Warranty
+                        </div>
+                    </div>
                 </div>
-                <h1>Floors Built for <span>Florida's Climate</span></h1>
-                <p class="hero-subtitle">Professional epoxy flooring engineered to withstand Jacksonville's 75% humidity, salt air, and hurricane seasons. Transform your garage or commercial space with coatings that last.</p>
-                <div class="hero-cta">
-                    <a href="#contact" class="btn btn-primary btn-lg" data-page="contact">
-                        <i class="ph ph-chat-circle-text"></i> Get Free Quote
-                    </a>
-                    <a href="tel:+19045550199" class="btn btn-outline-light btn-lg">
-                        <i class="ph ph-phone"></i> (904) 555-0199
-                    </a>
-                </div>
-                <div class="hero-badges">
-                    <div class="badge"><i class="ph ph-certificate"></i> FL Licensed & Insured</div>
-                    <div class="badge"><i class="ph ph-shield-check"></i> 15-Year Warranty</div>
-                    <div class="badge"><i class="ph ph-drop"></i> Humidity-Resistant</div>
-                </div>
-            </div>
-
-            <!-- Scroll Indicator -->
-            <div class="scroll-indicator">
-                <span>Scroll to explore</span>
-                <div class="scroll-arrow"><i class="ph ph-caret-down"></i></div>
             </div>
         </section>
 
@@ -226,15 +273,15 @@
                 <div class="value-props-grid">
                     <div class="value-prop">
                         <h3>Climate-Engineered Coatings</h3>
-                        <p>Multi-layer moisture barriers designed for Northeast Florida's subtropical humidity and coastal conditions</p>
+                        <p>Multi-layer moisture barriers designed for Northeast Florida's 75% humidity and coastal conditions</p>
                     </div>
                     <div class="value-prop">
                         <h3>15-Year Warranty</h3>
-                        <p>Industry-leading coverage against peeling, flaking, and delamination under normal residential use</p>
+                        <p>Industry-leading coverage against peeling, flaking, and delamination under normal use</p>
                     </div>
                     <div class="value-prop">
                         <h3>1-Day Installation</h3>
-                        <p>Most garage floors completed in a single day with climate-controlled application for optimal curing</p>
+                        <p>Most garage floors completed in a single day with climate-controlled application</p>
                     </div>
                 </div>
             </div>
@@ -245,7 +292,7 @@
             <div class="container">
                 <div class="section-header">
                     <span class="section-tag">Our Services</span>
-                    <h2>Professional Epoxy Flooring Solutions</h2>
+                    <h2>Premium Epoxy Flooring Solutions</h2>
                     <p>Quality workmanship backed by our 15-year warranty</p>
                 </div>
                 <div class="services-grid">
@@ -258,13 +305,13 @@
                     <a href="#service-metallic-epoxy" class="service-card" data-page="service-metallic-epoxy">
                         <div class="service-icon"><i class="ph ph-sparkle"></i></div>
                         <h3>Metallic Epoxy Floors</h3>
-                        <p>Stunning 3D metallic swirl designs with premium UV-stable pigments</p>
+                        <p>Stunning 3D metallic swirl designs with premium UV-stable pigments for a luxury finish</p>
                         <span class="service-price">$6-12 per sq ft</span>
                     </a>
                     <a href="#service-commercial-epoxy" class="service-card" data-page="service-commercial-epoxy">
                         <div class="service-icon"><i class="ph ph-buildings"></i></div>
                         <h3>Commercial Epoxy</h3>
-                        <p>Heavy-duty flooring for warehouses, showrooms, and JAXPORT logistics facilities</p>
+                        <p>Heavy-duty flooring for warehouses, showrooms, and logistics facilities</p>
                         <span class="service-price">$3-8 per sq ft</span>
                     </a>
                     <a href="#service-flake-epoxy" class="service-card" data-page="service-flake-epoxy">
@@ -289,7 +336,7 @@
             </div>
         </section>
 
-        <!-- Our Process Section -->
+        <!-- Process Section -->
         <section class="process-section">
             <div class="container">
                 <div class="section-header">
@@ -297,49 +344,42 @@
                     <h2>Our Proven 4-Step Process</h2>
                     <p>From consultation to final inspection, we ensure every floor exceeds expectations</p>
                 </div>
-                <div class="process-timeline">
-                    <div class="process-step">
-                        <div class="process-step-number">1</div>
-                        <div class="process-step-icon">
-                            <i class="ph ph-chat-circle"></i>
+                <div class="process-grid">
+                    <div class="process-card">
+                        <div class="process-number">1</div>
+                        <div class="process-image">
+                            <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=400&h=300&fit=crop" alt="Consultation meeting">
                         </div>
-                        <div class="process-step-content">
-                            <h3>Free Consultation</h3>
-                            <p>We assess your space, discuss your vision, and provide a detailed quote with no hidden fees.</p>
-                        </div>
-                        <div class="process-connector"></div>
+                        <h3>Free Consultation</h3>
+                        <div class="process-time">Day 1 - Morning</div>
+                        <p>We assess your space, discuss your vision, and provide a detailed quote</p>
                     </div>
-                    <div class="process-step">
-                        <div class="process-step-number">2</div>
-                        <div class="process-step-icon">
-                            <i class="ph ph-broom"></i>
+                    <div class="process-card">
+                        <div class="process-number">2</div>
+                        <div class="process-image">
+                            <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=400&h=300&fit=crop" alt="Surface preparation">
                         </div>
-                        <div class="process-step-content">
-                            <h3>Surface Preparation</h3>
-                            <p>Diamond grinding removes contaminants and creates the perfect profile for maximum adhesion.</p>
-                        </div>
-                        <div class="process-connector"></div>
+                        <h3>Surface Preparation</h3>
+                        <div class="process-time">Day 1 - Afternoon</div>
+                        <p>Diamond grinding removes contaminants for maximum adhesion</p>
                     </div>
-                    <div class="process-step">
-                        <div class="process-step-number">3</div>
-                        <div class="process-step-icon">
-                            <i class="ph ph-paint-roller"></i>
+                    <div class="process-card">
+                        <div class="process-number">3</div>
+                        <div class="process-image">
+                            <img src="https://images.unsplash.com/photo-1621905252507-b35492cc74b4?w=400&h=300&fit=crop" alt="Epoxy application">
                         </div>
-                        <div class="process-step-content">
-                            <h3>Epoxy Application</h3>
-                            <p>Multi-layer coating system applied in climate-controlled conditions for optimal curing.</p>
-                        </div>
-                        <div class="process-connector"></div>
+                        <h3>Epoxy Application</h3>
+                        <div class="process-time">Day 2 - All Day</div>
+                        <p>Multi-layer coating system applied in climate-controlled conditions</p>
                     </div>
-                    <div class="process-step">
-                        <div class="process-step-number">4</div>
-                        <div class="process-step-icon">
-                            <i class="ph ph-seal-check"></i>
+                    <div class="process-card">
+                        <div class="process-number">4</div>
+                        <div class="process-image">
+                            <img src="https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b?w=400&h=300&fit=crop" alt="Final inspection">
                         </div>
-                        <div class="process-step-content">
-                            <h3>Final Inspection</h3>
-                            <p>Thorough quality check ensures every detail meets our high standards before handover.</p>
-                        </div>
+                        <h3>Final Inspection</h3>
+                        <div class="process-time">Day 3 - Morning</div>
+                        <p>Quality check ensures every detail meets our high standards</p>
                     </div>
                 </div>
             </div>
@@ -391,7 +431,8 @@
                 </div>
                 <div class="portfolio-grid">
                     <div class="portfolio-item portfolio-featured">
-                        <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&h=600&fit=crop" alt="Metallic epoxy garage floor in Ponte Vedra">
+                        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&h=600&fit=crop" alt="Metallic epoxy garage floor in Ponte Vedra">
+                        <div class="portfolio-overlay"></div>
                         <div class="portfolio-content">
                             <span class="portfolio-tag">Featured Project</span>
                             <h3>Ponte Vedra Luxury Garage</h3>
@@ -400,35 +441,40 @@
                         </div>
                     </div>
                     <div class="portfolio-item">
-                        <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=600&h=400&fit=crop" alt="Flake epoxy floor Jacksonville Beach">
+                        <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=600&h=400&fit=crop" alt="Flake epoxy floor Jacksonville Beach">
+                        <div class="portfolio-overlay"></div>
                         <div class="portfolio-content">
                             <h3>Jacksonville Beach Home</h3>
                             <p>Flake epoxy system</p>
                         </div>
                     </div>
                     <div class="portfolio-item">
-                        <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=600&h=400&fit=crop" alt="Commercial epoxy Orange Park">
+                        <img src="https://images.unsplash.com/photo-1600573472592-401b489a3cdc?w=600&h=400&fit=crop" alt="Commercial epoxy Orange Park">
+                        <div class="portfolio-overlay"></div>
                         <div class="portfolio-content">
                             <h3>Orange Park Auto Shop</h3>
                             <p>Commercial grade coating</p>
                         </div>
                     </div>
                     <div class="portfolio-item">
-                        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600&h=400&fit=crop" alt="Polished concrete St Augustine">
+                        <img src="https://images.unsplash.com/photo-1600566752355-35792bedcfea?w=600&h=400&fit=crop" alt="Polished concrete St Augustine">
+                        <div class="portfolio-overlay"></div>
                         <div class="portfolio-content">
                             <h3>St. Augustine Showroom</h3>
                             <p>Polished concrete finish</p>
                         </div>
                     </div>
                     <div class="portfolio-item">
-                        <img src="https://images.unsplash.com/photo-1600566752355-35792bedcfea?w=600&h=400&fit=crop" alt="Decorative flake Mandarin">
+                        <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=600&h=400&fit=crop" alt="Decorative flake Mandarin">
+                        <div class="portfolio-overlay"></div>
                         <div class="portfolio-content">
                             <h3>Mandarin Residence</h3>
                             <p>Granite flake system</p>
                         </div>
                     </div>
                     <div class="portfolio-item">
-                        <img src="https://images.unsplash.com/photo-1600573472592-401b489a3cdc?w=600&h=400&fit=crop" alt="Garage epoxy Fleming Island">
+                        <img src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=600&h=400&fit=crop" alt="Garage epoxy Fleming Island">
+                        <div class="portfolio-overlay"></div>
                         <div class="portfolio-content">
                             <h3>Fleming Island</h3>
                             <p>Solid color epoxy</p>
@@ -451,56 +497,42 @@
                     <h2>See the Difference</h2>
                     <p>Real before and after results from Northeast Florida homeowners</p>
                 </div>
-                <div class="before-after-grid">
-                    <div class="before-after-card">
-                        <div class="before-after-images">
-                            <div class="before-image">
-                                <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&h=400&fit=crop&sat=-100&bri=-10" alt="Before: Worn concrete garage floor in Ponte Vedra">
-                                <span class="image-label before-label">Before</span>
+                <div class="before-after-showcase">
+                    <div class="ba-slider-wrapper">
+                        <div class="ba-slider" id="ba-slider-1">
+                            <div class="ba-after">
+                                <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&h=600&fit=crop" alt="After: Stunning metallic epoxy finish">
                             </div>
-                            <div class="after-image">
-                                <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&h=400&fit=crop" alt="After: Stunning metallic epoxy finish in Ponte Vedra">
-                                <span class="image-label after-label">After</span>
+                            <div class="ba-before">
+                                <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&h=600&fit=crop" alt="Before: Worn concrete garage floor">
                             </div>
+                            <div class="ba-handle" id="ba-handle-1"></div>
                         </div>
-                        <div class="before-after-info">
-                            <span class="location-tag"><i class="ph ph-map-pin"></i> Ponte Vedra Garage</span>
-                            <h3>3-Car Garage Transformation</h3>
-                            <p>Metallic pearl epoxy with moisture barrier - Completed in 2 days</p>
+                        <div class="ba-labels">
+                            <span class="ba-label">Before</span>
+                            <span class="ba-label after">After</span>
                         </div>
                     </div>
-                    <div class="before-after-card">
-                        <div class="before-after-images">
-                            <div class="before-image">
-                                <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=600&h=400&fit=crop&sat=-100&bri=-10" alt="Before: Stained concrete floor in Jacksonville Beach">
-                                <span class="image-label before-label">Before</span>
+                    <div class="ba-info">
+                        <h3>Ponte Vedra 3-Car Garage</h3>
+                        <p>This 800 sq ft garage was transformed with our premium metallic pearl epoxy system. The homeowner wanted something that would complement their luxury vehicles and we delivered.</p>
+                        <div class="ba-meta">
+                            <div class="ba-meta-item">
+                                <i class="ph ph-ruler"></i>
+                                800 sq ft
                             </div>
-                            <div class="after-image">
-                                <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=600&h=400&fit=crop" alt="After: Beautiful flake epoxy in Jacksonville Beach">
-                                <span class="image-label after-label">After</span>
+                            <div class="ba-meta-item">
+                                <i class="ph ph-calendar"></i>
+                                2 days
                             </div>
-                        </div>
-                        <div class="before-after-info">
-                            <span class="location-tag"><i class="ph ph-map-pin"></i> Jacksonville Beach</span>
-                            <h3>Coastal Home Upgrade</h3>
-                            <p>Salt-resistant flake system with anti-slip finish</p>
-                        </div>
-                    </div>
-                    <div class="before-after-card">
-                        <div class="before-after-images">
-                            <div class="before-image">
-                                <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=600&h=400&fit=crop&sat=-100&bri=-10" alt="Before: Oil-stained commercial floor in Orange Park">
-                                <span class="image-label before-label">Before</span>
-                            </div>
-                            <div class="after-image">
-                                <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=600&h=400&fit=crop" alt="After: Industrial-grade epoxy in Orange Park auto shop">
-                                <span class="image-label after-label">After</span>
+                            <div class="ba-meta-item">
+                                <i class="ph ph-map-pin"></i>
+                                Ponte Vedra Beach
                             </div>
                         </div>
-                        <div class="before-after-info">
-                            <span class="location-tag"><i class="ph ph-map-pin"></i> Orange Park Auto Shop</span>
-                            <h3>Commercial Floor Revival</h3>
-                            <p>Chemical-resistant coating for heavy daily use</p>
+                        <div class="ba-quote">
+                            <p>"The floor looks absolutely stunning. It's held up perfectly through two hurricane seasons with no issues whatsoever."</p>
+                            <cite>- Chris H., Homeowner</cite>
                         </div>
                     </div>
                 </div>
@@ -525,8 +557,11 @@
                         </div>
                         <p class="testimonial-text">"Living near the beach, I was worried about salt air damage. The metallic epoxy they installed has held up perfectly through two hurricane seasons. No peeling, no moisture issues. Worth every penny."</p>
                         <div class="testimonial-author">
-                            <strong>Chris H.</strong>
-                            <span>Ponte Vedra Beach - Metallic Epoxy</span>
+                            <div class="testimonial-avatar">C</div>
+                            <div>
+                                <strong>Chris H.</strong>
+                                <span>Ponte Vedra Beach</span>
+                            </div>
                         </div>
                     </div>
                     <div class="testimonial-card">
@@ -539,8 +574,11 @@
                         </div>
                         <p class="testimonial-text">"Had our 3-car garage done with the flake system. They explained how the moisture barrier works with our humid summers. Done in one day, looks amazing, and so easy to clean the sand we track in."</p>
                         <div class="testimonial-author">
-                            <strong>Sarah M.</strong>
-                            <span>Jacksonville Beach - Flake Epoxy</span>
+                            <div class="testimonial-avatar">S</div>
+                            <div>
+                                <strong>Sarah M.</strong>
+                                <span>Jacksonville Beach</span>
+                            </div>
                         </div>
                     </div>
                     <div class="testimonial-card">
@@ -551,10 +589,13 @@
                             <i class="ph-fill ph-star"></i>
                             <i class="ph-fill ph-star"></i>
                         </div>
-                        <p class="testimonial-text">"We compared several quotes for our warehouse near JAXPORT. Their knowledge of industrial-grade coatings and Florida building requirements made the difference. Floor handles forklift traffic daily with zero issues."</p>
+                        <p class="testimonial-text">"We compared several quotes for our warehouse. Their knowledge of industrial-grade coatings made the difference. Floor handles forklift traffic daily with zero issues."</p>
                         <div class="testimonial-author">
-                            <strong>Mike R.</strong>
-                            <span>Imeson Park - Commercial Epoxy</span>
+                            <div class="testimonial-avatar">M</div>
+                            <div>
+                                <strong>Mike R.</strong>
+                                <span>Imeson Park</span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -705,7 +746,6 @@
     <!-- ==================== CONTACT PAGE ==================== -->
     <div id="page-contact" class="page-container">
         <section class="page-hero page-hero-short">
-            <div class="hero-overlay"></div>
             <div class="hero-content">
                 <h1>Contact Us</h1>
                 <p>Get a free estimate for your epoxy flooring project</p>
@@ -835,7 +875,6 @@
     <!-- ==================== ABOUT PAGE ==================== -->
     <div id="page-about" class="page-container">
         <section class="page-hero page-hero-short">
-            <div class="hero-overlay"></div>
             <div class="hero-content">
                 <h1>About Jacksonville Epoxy Flooring Pros</h1>
                 <p>Northeast Florida's Premier Epoxy Floor Specialists</p>
@@ -848,29 +887,29 @@
                     <div class="about-text">
                         <h2>Jacksonville's Trusted Epoxy Flooring Experts</h2>
                         <p>We're Northeast Florida's dedicated epoxy flooring specialists. From Riverside to Ponte Vedra, from Mandarin to Fernandina Beach - we've transformed thousands of garages, showrooms, and commercial spaces with durable, beautiful floors.</p>
-                        <p>What sets us apart? We understand Florida. Our coatings are specifically engineered for the challenges of living on the First Coast: the 75% average humidity, the salt air corrosion in beach communities, the hurricane seasons that test every surface. We don't just install epoxy - we install floors that perform year after year in Northeast Florida's demanding climate.</p>
-                        <p>With over a decade of experience serving homeowners and businesses across the Jacksonville Metro, we've built our reputation on technical expertise and honest service. From luxury homes in Marsh Landing to warehouses at Cecil Commerce Center, we bring the same commitment to quality workmanship.</p>
+                        <p>What sets us apart? We understand Florida. Our coatings are specifically engineered for the challenges of living on the First Coast: the 75% average humidity, the salt air corrosion in beach communities, the hurricane seasons that test every surface.</p>
+                        <p>With over a decade of experience serving homeowners and businesses across the Jacksonville Metro, we've built our reputation on technical expertise and honest service.</p>
 
                         <div class="about-features">
                             <div class="about-feature">
                                 <i class="ph ph-check-circle"></i>
                                 <div>
                                     <strong>Climate-Engineered Installation</strong>
-                                    <p>Climate-controlled application maintaining 45-55% humidity for optimal adhesion in Florida's subtropical environment</p>
+                                    <p>Climate-controlled application maintaining 45-55% humidity for optimal adhesion</p>
                                 </div>
                             </div>
                             <div class="about-feature">
                                 <i class="ph ph-check-circle"></i>
                                 <div>
                                     <strong>15-Year Warranty</strong>
-                                    <p>Industry-leading warranty covering peeling, flaking, and delamination under normal residential and light commercial use</p>
+                                    <p>Industry-leading warranty covering peeling, flaking, and delamination</p>
                                 </div>
                             </div>
                             <div class="about-feature">
                                 <i class="ph ph-check-circle"></i>
                                 <div>
                                     <strong>Local Expertise</strong>
-                                    <p>Deep knowledge of Jacksonville's neighborhoods, building requirements, and the specific challenges of First Coast properties</p>
+                                    <p>Deep knowledge of Jacksonville's neighborhoods and building requirements</p>
                                 </div>
                             </div>
                         </div>
@@ -885,7 +924,6 @@
     <!-- ==================== SERVICES PAGE ==================== -->
     <div id="page-services" class="page-container">
         <section class="page-hero page-hero-short">
-            <div class="hero-overlay"></div>
             <div class="hero-content">
                 <h1>Our Services</h1>
                 <p>Professional epoxy flooring solutions backed by our 15-year warranty</p>
@@ -899,7 +937,7 @@
                         <div class="service-full-icon"><i class="ph ph-garage"></i></div>
                         <div class="service-full-content">
                             <h3>Garage Floor Epoxy</h3>
-                            <p>Transform your garage with durable epoxy coating engineered for Florida's humidity. Multi-layer moisture barriers prevent the adhesion failures common in our subtropical climate. Available in solid colors, flake systems, and custom designs.</p>
+                            <p>Transform your garage with durable epoxy coating engineered for Florida's humidity. Multi-layer moisture barriers prevent the adhesion failures common in our subtropical climate.</p>
                             <div class="service-meta">
                                 <span class="service-price-tag">$1,500-3,500</span>
                                 <span class="service-duration">Lasts 15-20 years</span>
@@ -911,7 +949,7 @@
                         <div class="service-full-icon"><i class="ph ph-sparkle"></i></div>
                         <div class="service-full-content">
                             <h3>Metallic Epoxy Floors</h3>
-                            <p>Stunning 3D metallic swirl designs using premium UV-stable pigments. Each floor is unique with flowing patterns that catch light beautifully. Popular in Ponte Vedra showrooms and San Marco luxury homes.</p>
+                            <p>Stunning 3D metallic swirl designs using premium UV-stable pigments. Each floor is unique with flowing patterns that catch light beautifully.</p>
                             <div class="service-meta">
                                 <span class="service-price-tag">$6-12 per sq ft</span>
                                 <span class="service-duration">Lasts 20+ years</span>
@@ -923,7 +961,7 @@
                         <div class="service-full-icon"><i class="ph ph-buildings"></i></div>
                         <div class="service-full-content">
                             <h3>Commercial Epoxy</h3>
-                            <p>Heavy-duty flooring for showrooms, retail spaces, and light industrial applications. Chemical-resistant formulas available for automotive shops and manufacturing facilities. Serving businesses across Jacksonville Metro.</p>
+                            <p>Heavy-duty flooring for showrooms, retail spaces, and light industrial applications. Chemical-resistant formulas available.</p>
                             <div class="service-meta">
                                 <span class="service-price-tag">$3-8 per sq ft</span>
                                 <span class="service-duration">Lasts 15-25 years</span>
@@ -935,7 +973,7 @@
                         <div class="service-full-icon"><i class="ph ph-paint-brush"></i></div>
                         <div class="service-full-content">
                             <h3>Decorative Flake Floors</h3>
-                            <p>Colorful chip broadcast systems that hide imperfections and provide anti-slip texture. Perfect for beach community garages where sand and water get tracked in. Wide range of color combinations available.</p>
+                            <p>Colorful chip broadcast systems that hide imperfections and provide anti-slip texture. Perfect for beach community garages.</p>
                             <div class="service-meta">
                                 <span class="service-price-tag">$4-7 per sq ft</span>
                                 <span class="service-duration">Lasts 15-20 years</span>
@@ -947,7 +985,7 @@
                         <div class="service-full-icon"><i class="ph ph-sun"></i></div>
                         <div class="service-full-content">
                             <h3>Concrete Polishing</h3>
-                            <p>High-gloss polished concrete finish that resists moisture penetration and requires minimal maintenance. Popular in modern homes and commercial spaces seeking an industrial-chic aesthetic.</p>
+                            <p>High-gloss polished concrete finish that resists moisture penetration and requires minimal maintenance.</p>
                             <div class="service-meta">
                                 <span class="service-price-tag">$3-8 per sq ft</span>
                                 <span class="service-duration">Lasts 20+ years</span>
@@ -959,7 +997,7 @@
                         <div class="service-full-icon"><i class="ph ph-factory"></i></div>
                         <div class="service-full-content">
                             <h3>Industrial Coatings</h3>
-                            <p>Warehouse and factory floor solutions built for forklift traffic and heavy equipment. Serving JAXPORT facilities, Cecil Commerce Center warehouses, and Amazon distribution centers across Northeast Florida.</p>
+                            <p>Warehouse and factory floor solutions built for forklift traffic and heavy equipment.</p>
                             <div class="service-meta">
                                 <span class="service-price-tag">$2-6 per sq ft</span>
                                 <span class="service-duration">Lasts 10-20 years</span>
@@ -977,7 +1015,6 @@
     <!-- Jacksonville -->
     <div id="page-location-jacksonville" class="page-container">
         <section class="page-hero page-hero-short">
-            <div class="hero-overlay"></div>
             <div class="hero-content">
                 <h1>Epoxy Flooring in Jacksonville, FL</h1>
                 <p>Serving all Jacksonville neighborhoods from Riverside to the Northside</p>
@@ -988,8 +1025,8 @@
                 <div class="location-grid">
                     <div class="location-text">
                         <h2>Jacksonville Epoxy Flooring Services</h2>
-                        <p>As Jacksonville's largest city by land area, we serve homeowners and businesses across every neighborhood - from historic San Marco and Avondale to growing areas like Nocatee and World Golf Village. Our team understands the unique challenges of maintaining floors in Northeast Florida's climate.</p>
-                        <p>Jacksonville's 75% average humidity and proximity to the St. Johns River create specific moisture challenges for concrete floors. We use climate-controlled installation techniques and multi-layer moisture barriers to ensure your epoxy coating bonds properly and lasts for years.</p>
+                        <p>As Jacksonville's largest city by land area, we serve homeowners and businesses across every neighborhood - from historic San Marco and Avondale to growing areas like Nocatee and World Golf Village.</p>
+                        <p>Jacksonville's 75% average humidity and proximity to the St. Johns River create specific moisture challenges for concrete floors. We use climate-controlled installation techniques and multi-layer moisture barriers to ensure your epoxy coating bonds properly.</p>
                         <h3>Services Available in Jacksonville</h3>
                         <ul class="services-checklist">
                             <li><i class="ph ph-check"></i> Garage Floor Epoxy</li>
@@ -1012,7 +1049,6 @@
     <!-- Jacksonville Beach -->
     <div id="page-location-jax-beach" class="page-container">
         <section class="page-hero page-hero-short">
-            <div class="hero-overlay"></div>
             <div class="hero-content">
                 <h1>Epoxy Flooring in Jacksonville Beach, FL</h1>
                 <p>Salt air-resistant coatings for the Beaches communities</p>
@@ -1023,8 +1059,8 @@
                 <div class="location-grid">
                     <div class="location-text">
                         <h2>Jacksonville Beach Epoxy Flooring Services</h2>
-                        <p>Living at the beach comes with unique challenges for your garage floor. Salt air corrosion, sand tracked in daily, and higher humidity levels all take their toll on unprotected concrete. Our epoxy coatings create a waterproof barrier that protects against these coastal conditions.</p>
-                        <p>Properties within 3,000 feet of the ocean face accelerated concrete deterioration. We serve Jacksonville Beach, Neptune Beach, and Atlantic Beach with coatings specifically designed to resist salt penetration and prevent the pitting and cracking common in beach properties.</p>
+                        <p>Living at the beach comes with unique challenges for your garage floor. Salt air corrosion, sand tracked in daily, and higher humidity levels all take their toll on unprotected concrete.</p>
+                        <p>Properties within 3,000 feet of the ocean face accelerated concrete deterioration. We serve Jacksonville Beach, Neptune Beach, and Atlantic Beach with coatings specifically designed to resist salt penetration.</p>
                         <h3>Services Available in Jacksonville Beach</h3>
                         <ul class="services-checklist">
                             <li><i class="ph ph-check"></i> Garage Floor Epoxy</li>
@@ -1047,7 +1083,6 @@
     <!-- Orange Park -->
     <div id="page-location-orange-park" class="page-container">
         <section class="page-hero page-hero-short">
-            <div class="hero-overlay"></div>
             <div class="hero-content">
                 <h1>Epoxy Flooring in Orange Park, FL</h1>
                 <p>Professional epoxy services in Orange Park and Clay County</p>
@@ -1058,8 +1093,7 @@
                 <div class="location-grid">
                     <div class="location-text">
                         <h2>Orange Park Epoxy Flooring Services</h2>
-                        <p>Orange Park and Clay County homeowners appreciate quality workmanship at fair prices. We serve the entire Orange Park area including Oakleaf, Middleburg, and Green Cove Springs with the same premium epoxy coatings we install throughout the Jacksonville Metro.</p>
-                        <p>Whether you're upgrading your garage in an established neighborhood or finishing a new construction home, our climate-engineered coatings provide lasting protection against Florida's humidity and seasonal temperature swings.</p>
+                        <p>Orange Park and Clay County homeowners appreciate quality workmanship at fair prices. We serve the entire Orange Park area including Oakleaf, Middleburg, and Green Cove Springs.</p>
                         <h3>Services Available in Orange Park</h3>
                         <ul class="services-checklist">
                             <li><i class="ph ph-check"></i> Garage Floor Epoxy</li>
@@ -1082,7 +1116,6 @@
     <!-- Fleming Island -->
     <div id="page-location-fleming-island" class="page-container">
         <section class="page-hero page-hero-short">
-            <div class="hero-overlay"></div>
             <div class="hero-content">
                 <h1>Epoxy Flooring in Fleming Island, FL</h1>
                 <p>Garage and commercial epoxy flooring for Fleming Island homes</p>
@@ -1093,8 +1126,7 @@
                 <div class="location-grid">
                     <div class="location-text">
                         <h2>Fleming Island Epoxy Flooring Services</h2>
-                        <p>Fleming Island's planned communities feature some of the nicest homes in Clay County. Homeowners here expect quality finishes throughout their properties - including their garages. Our metallic and decorative flake epoxy systems transform ordinary garage floors into stunning spaces.</p>
-                        <p>We understand Fleming Island homeowners value both aesthetics and durability. Our coatings provide the showroom-quality finish you want while standing up to the daily demands of Florida living.</p>
+                        <p>Fleming Island's planned communities feature some of the nicest homes in Clay County. Homeowners here expect quality finishes throughout their properties - including their garages.</p>
                         <h3>Services Available in Fleming Island</h3>
                         <ul class="services-checklist">
                             <li><i class="ph ph-check"></i> Garage Floor Epoxy</li>
@@ -1117,7 +1149,6 @@
     <!-- St. Augustine -->
     <div id="page-location-st-augustine" class="page-container">
         <section class="page-hero page-hero-short">
-            <div class="hero-overlay"></div>
             <div class="hero-content">
                 <h1>Epoxy Flooring in St. Augustine, FL</h1>
                 <p>Epoxy floor coatings for St. Augustine and St. Johns County</p>
@@ -1128,8 +1159,7 @@
                 <div class="location-grid">
                     <div class="location-text">
                         <h2>St. Augustine Epoxy Flooring Services</h2>
-                        <p>America's oldest city deserves floors that last. We serve St. Augustine and surrounding St. Johns County communities including World Golf Village, Nocatee, and Ponte Vedra Beach. From historic downtown properties to new construction in master-planned communities, we have the expertise to handle any project.</p>
-                        <p>St. Johns County's coastal location brings salt air challenges similar to the Jacksonville Beaches. Our moisture barriers and salt-resistant coatings protect your investment for years to come.</p>
+                        <p>America's oldest city deserves floors that last. We serve St. Augustine and surrounding St. Johns County communities including World Golf Village, Nocatee, and Ponte Vedra Beach.</p>
                         <h3>Services Available in St. Augustine</h3>
                         <ul class="services-checklist">
                             <li><i class="ph ph-check"></i> Garage Floor Epoxy</li>
@@ -1152,7 +1182,6 @@
     <!-- Ponte Vedra -->
     <div id="page-location-ponte-vedra" class="page-container">
         <section class="page-hero page-hero-short">
-            <div class="hero-overlay"></div>
             <div class="hero-content">
                 <h1>Epoxy Flooring in Ponte Vedra, FL</h1>
                 <p>Premium epoxy flooring for Ponte Vedra and Nocatee homeowners</p>
@@ -1163,8 +1192,7 @@
                 <div class="location-grid">
                     <div class="location-text">
                         <h2>Ponte Vedra Epoxy Flooring Services</h2>
-                        <p>Ponte Vedra is home to some of Northeast Florida's most prestigious addresses - from Marsh Landing and Sawgrass to the Nocatee master-planned community. Homeowners here expect premium finishes throughout their properties, and our metallic epoxy floors deliver the sophisticated aesthetic that complements luxury homes.</p>
-                        <p>Living near TPC Sawgrass and the Atlantic Ocean means dealing with both salt air corrosion and Florida's demanding humidity. We engineer every installation for Ponte Vedra's specific coastal conditions.</p>
+                        <p>Ponte Vedra is home to some of Northeast Florida's most prestigious addresses. Homeowners here expect premium finishes, and our metallic epoxy floors deliver the sophisticated aesthetic that complements luxury homes.</p>
                         <h3>Services Available in Ponte Vedra</h3>
                         <ul class="services-checklist">
                             <li><i class="ph ph-check"></i> Garage Floor Epoxy</li>
@@ -1187,7 +1215,6 @@
     <!-- Mandarin -->
     <div id="page-location-mandarin" class="page-container">
         <section class="page-hero page-hero-short">
-            <div class="hero-overlay"></div>
             <div class="hero-content">
                 <h1>Epoxy Flooring in Mandarin, FL</h1>
                 <p>Expert epoxy installation serving Mandarin and South Jacksonville</p>
@@ -1198,8 +1225,7 @@
                 <div class="location-grid">
                     <div class="location-text">
                         <h2>Mandarin Epoxy Flooring Services</h2>
-                        <p>Mandarin is one of Jacksonville's most desirable neighborhoods, known for tree-lined streets, excellent schools, and beautiful homes along the St. Johns River. Homeowners here take pride in their properties and appreciate the transformation a professional epoxy floor brings to their garages.</p>
-                        <p>Mandarin's proximity to the St. Johns River means higher humidity levels in some areas. Our moisture testing and climate-controlled installation process ensures proper adhesion and long-lasting results.</p>
+                        <p>Mandarin is one of Jacksonville's most desirable neighborhoods. Homeowners here take pride in their properties and appreciate the transformation a professional epoxy floor brings.</p>
                         <h3>Services Available in Mandarin</h3>
                         <ul class="services-checklist">
                             <li><i class="ph ph-check"></i> Garage Floor Epoxy</li>
@@ -1222,7 +1248,6 @@
     <!-- Fernandina Beach -->
     <div id="page-location-fernandina-beach" class="page-container">
         <section class="page-hero page-hero-short">
-            <div class="hero-overlay"></div>
             <div class="hero-content">
                 <h1>Epoxy Flooring in Fernandina Beach, FL</h1>
                 <p>Epoxy flooring services for Fernandina Beach and Amelia Island</p>
@@ -1233,8 +1258,7 @@
                 <div class="location-grid">
                     <div class="location-text">
                         <h2>Fernandina Beach Epoxy Flooring Services</h2>
-                        <p>Amelia Island's charming community of Fernandina Beach combines historic downtown character with beautiful coastal living. Whether you own a Victorian-era home in the historic district or a modern beach house, our epoxy coatings protect your garage floor from the island's salt air and humidity.</p>
-                        <p>Fernandina Beach's location on a barrier island means constant exposure to salt air. Our specialized coatings create an impenetrable barrier that prevents the concrete corrosion and rust staining common in unprotected island properties.</p>
+                        <p>Amelia Island's charming community of Fernandina Beach combines historic character with beautiful coastal living. Our specialized coatings protect your garage floor from the island's salt air and humidity.</p>
                         <h3>Services Available in Fernandina Beach</h3>
                         <ul class="services-checklist">
                             <li><i class="ph ph-check"></i> Garage Floor Epoxy</li>

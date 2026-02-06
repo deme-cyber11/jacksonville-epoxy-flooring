@@ -343,4 +343,120 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
+    // ========================================
+    // Before/After Comparison Slider
+    // ========================================
+    function initBeforeAfterSliders() {
+        const sliders = document.querySelectorAll('.comparison-slider, .ba-handle');
+
+        sliders.forEach(slider => {
+            const container = slider.closest('.hero-comparison') || slider.closest('.ba-slider');
+            if (!container) return;
+
+            const beforeImage = container.querySelector('.comparison-before, .ba-before');
+            const handle = slider;
+
+            let isDragging = false;
+
+            function updateSliderPosition(clientX) {
+                const rect = container.getBoundingClientRect();
+                let position = ((clientX - rect.left) / rect.width) * 100;
+
+                // Clamp position between 5% and 95%
+                position = Math.max(5, Math.min(95, position));
+
+                // Update slider handle position
+                handle.style.left = `${position}%`;
+
+                // Update before image clip
+                if (beforeImage) {
+                    beforeImage.style.clipPath = `inset(0 ${100 - position}% 0 0)`;
+                }
+            }
+
+            // Mouse events
+            handle.addEventListener('mousedown', (e) => {
+                isDragging = true;
+                handle.classList.add('dragging');
+                e.preventDefault();
+            });
+
+            document.addEventListener('mousemove', (e) => {
+                if (!isDragging) return;
+                updateSliderPosition(e.clientX);
+            });
+
+            document.addEventListener('mouseup', () => {
+                isDragging = false;
+                handle.classList.remove('dragging');
+            });
+
+            // Touch events for mobile
+            handle.addEventListener('touchstart', () => {
+                isDragging = true;
+                handle.classList.add('dragging');
+            });
+
+            document.addEventListener('touchmove', (e) => {
+                if (!isDragging) return;
+                updateSliderPosition(e.touches[0].clientX);
+            });
+
+            document.addEventListener('touchend', () => {
+                isDragging = false;
+                handle.classList.remove('dragging');
+            });
+
+            // Click on container to move slider
+            container.addEventListener('click', (e) => {
+                if (e.target === handle || e.target.closest('.comparison-slider, .ba-slider')) return;
+                updateSliderPosition(e.clientX);
+            });
+
+            // Initialize at 50%
+            const rect = container.getBoundingClientRect();
+            updateSliderPosition(rect.left + rect.width / 2);
+        });
+    }
+
+    // Initialize sliders on page load
+    initBeforeAfterSliders();
+
+    // Re-initialize on hash change (for SPA navigation)
+    window.addEventListener('hashchange', () => {
+        setTimeout(initBeforeAfterSliders, 100);
+    });
+
+    // ========================================
+    // Scroll-triggered Section Animations
+    // ========================================
+    const sections = document.querySelectorAll('section');
+
+    const sectionObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('section-visible');
+            }
+        });
+    }, { threshold: 0.1 });
+
+    sections.forEach(section => {
+        sectionObserver.observe(section);
+    });
+
+    // ========================================
+    // Portfolio Item Hover Effects
+    // ========================================
+    const portfolioItems = document.querySelectorAll('.portfolio-item');
+
+    portfolioItems.forEach(item => {
+        item.addEventListener('mouseenter', () => {
+            item.querySelector('.portfolio-overlay')?.classList.add('active');
+        });
+
+        item.addEventListener('mouseleave', () => {
+            item.querySelector('.portfolio-overlay')?.classList.remove('active');
+        });
+    });
+
 });
