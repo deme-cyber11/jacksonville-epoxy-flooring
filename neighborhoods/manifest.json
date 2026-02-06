@@ -1,0 +1,386 @@
+{
+  "generated": "2026-02-06T05:30:44.777Z",
+  "config": "configs/jacksonville-epoxy.json",
+  "neighborhoodData": "data/neighborhoods/jacksonville.json",
+  "totalPages": 42,
+  "pages": [
+    {
+      "slug": "garage-epoxy-in-san-marco",
+      "type": "service-neighborhood",
+      "title": "Garage Floor Epoxy in San Marco, Jacksonville | Jacksonville Epoxy Flooring Pros",
+      "url": "/neighborhoods/garage-epoxy-in-san-marco.html",
+      "service": "Garage Floor Epoxy",
+      "neighborhood": "San Marco",
+      "metaDescription": "Looking for garage floor epoxy in San Marco? Jacksonville Epoxy Flooring Pros offers expert installation with 15-year warranty. Serving San Marco homeowners."
+    },
+    {
+      "slug": "garage-epoxy-in-riverside",
+      "type": "service-neighborhood",
+      "title": "Garage Floor Epoxy in Riverside, Jacksonville | Jacksonville Epoxy Flooring Pros",
+      "url": "/neighborhoods/garage-epoxy-in-riverside.html",
+      "service": "Garage Floor Epoxy",
+      "neighborhood": "Riverside",
+      "metaDescription": "Looking for garage floor epoxy in Riverside? Jacksonville Epoxy Flooring Pros offers expert installation with 15-year warranty. Serving Riverside homeowners."
+    },
+    {
+      "slug": "garage-epoxy-in-avondale",
+      "type": "service-neighborhood",
+      "title": "Garage Floor Epoxy in Avondale, Jacksonville | Jacksonville Epoxy Flooring Pros",
+      "url": "/neighborhoods/garage-epoxy-in-avondale.html",
+      "service": "Garage Floor Epoxy",
+      "neighborhood": "Avondale",
+      "metaDescription": "Professional garage floor epoxy services in Avondale, Jacksonville. 15-year warranty, licensed contractors. Free quotes for Avondale residents."
+    },
+    {
+      "slug": "garage-epoxy-in-ortega",
+      "type": "service-neighborhood",
+      "title": "Garage Floor Epoxy in Ortega, Jacksonville | Jacksonville Epoxy Flooring Pros",
+      "url": "/neighborhoods/garage-epoxy-in-ortega.html",
+      "service": "Garage Floor Epoxy",
+      "neighborhood": "Ortega",
+      "metaDescription": "Ortega's trusted garage floor epoxy contractor. $1,500-3,500, 15-year warranty. Get your free estimate today."
+    },
+    {
+      "slug": "garage-epoxy-in-mandarin",
+      "type": "service-neighborhood",
+      "title": "Garage Floor Epoxy in Mandarin, Jacksonville | Jacksonville Epoxy Flooring Pros",
+      "url": "/neighborhoods/garage-epoxy-in-mandarin.html",
+      "service": "Garage Floor Epoxy",
+      "neighborhood": "Mandarin",
+      "metaDescription": "Professional garage floor epoxy services in Mandarin, Jacksonville. 15-year warranty, licensed contractors. Free quotes for Mandarin residents."
+    },
+    {
+      "slug": "garage-epoxy-in-julington-creek",
+      "type": "service-neighborhood",
+      "title": "Garage Floor Epoxy in Julington Creek, Jacksonville | Jacksonville Epoxy Flooring Pros",
+      "url": "/neighborhoods/garage-epoxy-in-julington-creek.html",
+      "service": "Garage Floor Epoxy",
+      "neighborhood": "Julington Creek",
+      "metaDescription": "Expert garage floor epoxy installation in Julington Creek, FL. Jacksonville Epoxy Flooring Pros - licensed, insured, 15-year warranty. Call for free quote."
+    },
+    {
+      "slug": "garage-epoxy-in-fruit-cove",
+      "type": "service-neighborhood",
+      "title": "Garage Floor Epoxy in Fruit Cove, Jacksonville | Jacksonville Epoxy Flooring Pros",
+      "url": "/neighborhoods/garage-epoxy-in-fruit-cove.html",
+      "service": "Garage Floor Epoxy",
+      "neighborhood": "Fruit Cove",
+      "metaDescription": "Fruit Cove's trusted garage floor epoxy contractor. $1,500-3,500, 15-year warranty. Get your free estimate today."
+    },
+    {
+      "slug": "garage-epoxy-in-baymeadows",
+      "type": "service-neighborhood",
+      "title": "Garage Floor Epoxy in Baymeadows, Jacksonville | Jacksonville Epoxy Flooring Pros",
+      "url": "/neighborhoods/garage-epoxy-in-baymeadows.html",
+      "service": "Garage Floor Epoxy",
+      "neighborhood": "Baymeadows",
+      "metaDescription": "Baymeadows's trusted garage floor epoxy contractor. $1,500-3,500, 15-year warranty. Get your free estimate today."
+    },
+    {
+      "slug": "garage-epoxy-in-deerwood",
+      "type": "service-neighborhood",
+      "title": "Garage Floor Epoxy in Deerwood, Jacksonville | Jacksonville Epoxy Flooring Pros",
+      "url": "/neighborhoods/garage-epoxy-in-deerwood.html",
+      "service": "Garage Floor Epoxy",
+      "neighborhood": "Deerwood",
+      "metaDescription": "Professional garage floor epoxy services in Deerwood, Jacksonville. 15-year warranty, licensed contractors. Free quotes for Deerwood residents."
+    },
+    {
+      "slug": "garage-epoxy-in-tinseltown",
+      "type": "service-neighborhood",
+      "title": "Garage Floor Epoxy in Tinseltown, Jacksonville | Jacksonville Epoxy Flooring Pros",
+      "url": "/neighborhoods/garage-epoxy-in-tinseltown.html",
+      "service": "Garage Floor Epoxy",
+      "neighborhood": "Tinseltown",
+      "metaDescription": "Tinseltown's trusted garage floor epoxy contractor. $1,500-3,500, 15-year warranty. Get your free estimate today."
+    },
+    {
+      "slug": "garage-epoxy-in-atlantic-beach",
+      "type": "service-neighborhood",
+      "title": "Garage Floor Epoxy in Atlantic Beach, Jacksonville | Jacksonville Epoxy Flooring Pros",
+      "url": "/neighborhoods/garage-epoxy-in-atlantic-beach.html",
+      "service": "Garage Floor Epoxy",
+      "neighborhood": "Atlantic Beach",
+      "metaDescription": "Atlantic Beach's trusted garage floor epoxy contractor. $1,500-3,500, 15-year warranty. Get your free estimate today."
+    },
+    {
+      "slug": "garage-epoxy-in-neptune-beach",
+      "type": "service-neighborhood",
+      "title": "Garage Floor Epoxy in Neptune Beach, Jacksonville | Jacksonville Epoxy Flooring Pros",
+      "url": "/neighborhoods/garage-epoxy-in-neptune-beach.html",
+      "service": "Garage Floor Epoxy",
+      "neighborhood": "Neptune Beach",
+      "metaDescription": "Looking for garage floor epoxy in Neptune Beach? Jacksonville Epoxy Flooring Pros offers expert installation with 15-year warranty. Serving Neptune Beach homeowners."
+    },
+    {
+      "slug": "garage-epoxy-in-jacksonville-beach",
+      "type": "service-neighborhood",
+      "title": "Garage Floor Epoxy in Jacksonville Beach, Jacksonville | Jacksonville Epoxy Flooring Pros",
+      "url": "/neighborhoods/garage-epoxy-in-jacksonville-beach.html",
+      "service": "Garage Floor Epoxy",
+      "neighborhood": "Jacksonville Beach",
+      "metaDescription": "Jacksonville Beach's trusted garage floor epoxy contractor. $1,500-3,500, 15-year warranty. Get your free estimate today."
+    },
+    {
+      "slug": "garage-epoxy-in-ponte-vedra-beach",
+      "type": "service-neighborhood",
+      "title": "Garage Floor Epoxy in Ponte Vedra Beach, Jacksonville | Jacksonville Epoxy Flooring Pros",
+      "url": "/neighborhoods/garage-epoxy-in-ponte-vedra-beach.html",
+      "service": "Garage Floor Epoxy",
+      "neighborhood": "Ponte Vedra Beach",
+      "metaDescription": "Looking for garage floor epoxy in Ponte Vedra Beach? Jacksonville Epoxy Flooring Pros offers expert installation with 15-year warranty. Serving Ponte Vedra Beach homeowners."
+    },
+    {
+      "slug": "garage-epoxy-in-ponte-vedra",
+      "type": "service-neighborhood",
+      "title": "Garage Floor Epoxy in Ponte Vedra, Jacksonville | Jacksonville Epoxy Flooring Pros",
+      "url": "/neighborhoods/garage-epoxy-in-ponte-vedra.html",
+      "service": "Garage Floor Epoxy",
+      "neighborhood": "Ponte Vedra",
+      "metaDescription": "Expert garage floor epoxy installation in Ponte Vedra, FL. Jacksonville Epoxy Flooring Pros - licensed, insured, 15-year warranty. Call for free quote."
+    },
+    {
+      "slug": "garage-epoxy-in-arlington",
+      "type": "service-neighborhood",
+      "title": "Garage Floor Epoxy in Arlington, Jacksonville | Jacksonville Epoxy Flooring Pros",
+      "url": "/neighborhoods/garage-epoxy-in-arlington.html",
+      "service": "Garage Floor Epoxy",
+      "neighborhood": "Arlington",
+      "metaDescription": "Looking for garage floor epoxy in Arlington? Jacksonville Epoxy Flooring Pros offers expert installation with 15-year warranty. Serving Arlington homeowners."
+    },
+    {
+      "slug": "garage-epoxy-in-regency",
+      "type": "service-neighborhood",
+      "title": "Garage Floor Epoxy in Regency, Jacksonville | Jacksonville Epoxy Flooring Pros",
+      "url": "/neighborhoods/garage-epoxy-in-regency.html",
+      "service": "Garage Floor Epoxy",
+      "neighborhood": "Regency",
+      "metaDescription": "Expert garage floor epoxy installation in Regency, FL. Jacksonville Epoxy Flooring Pros - licensed, insured, 15-year warranty. Call for free quote."
+    },
+    {
+      "slug": "garage-epoxy-in-northside",
+      "type": "service-neighborhood",
+      "title": "Garage Floor Epoxy in Northside, Jacksonville | Jacksonville Epoxy Flooring Pros",
+      "url": "/neighborhoods/garage-epoxy-in-northside.html",
+      "service": "Garage Floor Epoxy",
+      "neighborhood": "Northside",
+      "metaDescription": "Looking for garage floor epoxy in Northside? Jacksonville Epoxy Flooring Pros offers expert installation with 15-year warranty. Serving Northside homeowners."
+    },
+    {
+      "slug": "garage-epoxy-in-springfield",
+      "type": "service-neighborhood",
+      "title": "Garage Floor Epoxy in Springfield, Jacksonville | Jacksonville Epoxy Flooring Pros",
+      "url": "/neighborhoods/garage-epoxy-in-springfield.html",
+      "service": "Garage Floor Epoxy",
+      "neighborhood": "Springfield",
+      "metaDescription": "Expert garage floor epoxy installation in Springfield, FL. Jacksonville Epoxy Flooring Pros - licensed, insured, 15-year warranty. Call for free quote."
+    },
+    {
+      "slug": "garage-epoxy-in-murray-hill",
+      "type": "service-neighborhood",
+      "title": "Garage Floor Epoxy in Murray Hill, Jacksonville | Jacksonville Epoxy Flooring Pros",
+      "url": "/neighborhoods/garage-epoxy-in-murray-hill.html",
+      "service": "Garage Floor Epoxy",
+      "neighborhood": "Murray Hill",
+      "metaDescription": "Expert garage floor epoxy installation in Murray Hill, FL. Jacksonville Epoxy Flooring Pros - licensed, insured, 15-year warranty. Call for free quote."
+    },
+    {
+      "slug": "garage-epoxy-in-five-points",
+      "type": "service-neighborhood",
+      "title": "Garage Floor Epoxy in Five Points, Jacksonville | Jacksonville Epoxy Flooring Pros",
+      "url": "/neighborhoods/garage-epoxy-in-five-points.html",
+      "service": "Garage Floor Epoxy",
+      "neighborhood": "Five Points",
+      "metaDescription": "Expert garage floor epoxy installation in Five Points, FL. Jacksonville Epoxy Flooring Pros - licensed, insured, 15-year warranty. Call for free quote."
+    },
+    {
+      "slug": "garage-epoxy-in-downtown-jacksonville",
+      "type": "service-neighborhood",
+      "title": "Garage Floor Epoxy in Downtown Jacksonville, Jacksonville | Jacksonville Epoxy Flooring Pros",
+      "url": "/neighborhoods/garage-epoxy-in-downtown-jacksonville.html",
+      "service": "Garage Floor Epoxy",
+      "neighborhood": "Downtown Jacksonville",
+      "metaDescription": "Looking for garage floor epoxy in Downtown Jacksonville? Jacksonville Epoxy Flooring Pros offers expert installation with 15-year warranty. Serving Downtown Jacksonville homeowners."
+    },
+    {
+      "slug": "garage-epoxy-in-san-jose",
+      "type": "service-neighborhood",
+      "title": "Garage Floor Epoxy in San Jose, Jacksonville | Jacksonville Epoxy Flooring Pros",
+      "url": "/neighborhoods/garage-epoxy-in-san-jose.html",
+      "service": "Garage Floor Epoxy",
+      "neighborhood": "San Jose",
+      "metaDescription": "Professional garage floor epoxy services in San Jose, Jacksonville. 15-year warranty, licensed contractors. Free quotes for San Jose residents."
+    },
+    {
+      "slug": "garage-epoxy-in-lakewood",
+      "type": "service-neighborhood",
+      "title": "Garage Floor Epoxy in Lakewood, Jacksonville | Jacksonville Epoxy Flooring Pros",
+      "url": "/neighborhoods/garage-epoxy-in-lakewood.html",
+      "service": "Garage Floor Epoxy",
+      "neighborhood": "Lakewood",
+      "metaDescription": "Professional garage floor epoxy services in Lakewood, Jacksonville. 15-year warranty, licensed contractors. Free quotes for Lakewood residents."
+    },
+    {
+      "slug": "garage-epoxy-in-venetia",
+      "type": "service-neighborhood",
+      "title": "Garage Floor Epoxy in Venetia, Jacksonville | Jacksonville Epoxy Flooring Pros",
+      "url": "/neighborhoods/garage-epoxy-in-venetia.html",
+      "service": "Garage Floor Epoxy",
+      "neighborhood": "Venetia",
+      "metaDescription": "Expert garage floor epoxy installation in Venetia, FL. Jacksonville Epoxy Flooring Pros - licensed, insured, 15-year warranty. Call for free quote."
+    },
+    {
+      "slug": "garage-epoxy-in-deercreek",
+      "type": "service-neighborhood",
+      "title": "Garage Floor Epoxy in Deercreek, Jacksonville | Jacksonville Epoxy Flooring Pros",
+      "url": "/neighborhoods/garage-epoxy-in-deercreek.html",
+      "service": "Garage Floor Epoxy",
+      "neighborhood": "Deercreek",
+      "metaDescription": "Looking for garage floor epoxy in Deercreek? Jacksonville Epoxy Flooring Pros offers expert installation with 15-year warranty. Serving Deercreek homeowners."
+    },
+    {
+      "slug": "garage-epoxy-in-nocatee",
+      "type": "service-neighborhood",
+      "title": "Garage Floor Epoxy in Nocatee, Jacksonville | Jacksonville Epoxy Flooring Pros",
+      "url": "/neighborhoods/garage-epoxy-in-nocatee.html",
+      "service": "Garage Floor Epoxy",
+      "neighborhood": "Nocatee",
+      "metaDescription": "Expert garage floor epoxy installation in Nocatee, FL. Jacksonville Epoxy Flooring Pros - licensed, insured, 15-year warranty. Call for free quote."
+    },
+    {
+      "slug": "garage-epoxy-in-world-golf-village",
+      "type": "service-neighborhood",
+      "title": "Garage Floor Epoxy in World Golf Village, Jacksonville | Jacksonville Epoxy Flooring Pros",
+      "url": "/neighborhoods/garage-epoxy-in-world-golf-village.html",
+      "service": "Garage Floor Epoxy",
+      "neighborhood": "World Golf Village",
+      "metaDescription": "World Golf Village's trusted garage floor epoxy contractor. $1,500-3,500, 15-year warranty. Get your free estimate today."
+    },
+    {
+      "slug": "garage-epoxy-in-bartram-park",
+      "type": "service-neighborhood",
+      "title": "Garage Floor Epoxy in Bartram Park, Jacksonville | Jacksonville Epoxy Flooring Pros",
+      "url": "/neighborhoods/garage-epoxy-in-bartram-park.html",
+      "service": "Garage Floor Epoxy",
+      "neighborhood": "Bartram Park",
+      "metaDescription": "Professional garage floor epoxy services in Bartram Park, Jacksonville. 15-year warranty, licensed contractors. Free quotes for Bartram Park residents."
+    },
+    {
+      "slug": "garage-epoxy-in-oakleaf",
+      "type": "service-neighborhood",
+      "title": "Garage Floor Epoxy in Oakleaf, Jacksonville | Jacksonville Epoxy Flooring Pros",
+      "url": "/neighborhoods/garage-epoxy-in-oakleaf.html",
+      "service": "Garage Floor Epoxy",
+      "neighborhood": "Oakleaf",
+      "metaDescription": "Expert garage floor epoxy installation in Oakleaf, FL. Jacksonville Epoxy Flooring Pros - licensed, insured, 15-year warranty. Call for free quote."
+    },
+    {
+      "slug": "garage-epoxy-in-town-center",
+      "type": "service-neighborhood",
+      "title": "Garage Floor Epoxy in Town Center, Jacksonville | Jacksonville Epoxy Flooring Pros",
+      "url": "/neighborhoods/garage-epoxy-in-town-center.html",
+      "service": "Garage Floor Epoxy",
+      "neighborhood": "Town Center",
+      "metaDescription": "Expert garage floor epoxy installation in Town Center, FL. Jacksonville Epoxy Flooring Pros - licensed, insured, 15-year warranty. Call for free quote."
+    },
+    {
+      "slug": "garage-epoxy-in-southside",
+      "type": "service-neighborhood",
+      "title": "Garage Floor Epoxy in Southside, Jacksonville | Jacksonville Epoxy Flooring Pros",
+      "url": "/neighborhoods/garage-epoxy-in-southside.html",
+      "service": "Garage Floor Epoxy",
+      "neighborhood": "Southside",
+      "metaDescription": "Looking for garage floor epoxy in Southside? Jacksonville Epoxy Flooring Pros offers expert installation with 15-year warranty. Serving Southside homeowners."
+    },
+    {
+      "slug": "garage-epoxy-in-st-nicholas",
+      "type": "service-neighborhood",
+      "title": "Garage Floor Epoxy in St. Nicholas, Jacksonville | Jacksonville Epoxy Flooring Pros",
+      "url": "/neighborhoods/garage-epoxy-in-st-nicholas.html",
+      "service": "Garage Floor Epoxy",
+      "neighborhood": "St. Nicholas",
+      "metaDescription": "Professional garage floor epoxy services in St. Nicholas, Jacksonville. 15-year warranty, licensed contractors. Free quotes for St. Nicholas residents."
+    },
+    {
+      "slug": "garage-epoxy-in-beaches-town-center",
+      "type": "service-neighborhood",
+      "title": "Garage Floor Epoxy in Beaches Town Center, Jacksonville | Jacksonville Epoxy Flooring Pros",
+      "url": "/neighborhoods/garage-epoxy-in-beaches-town-center.html",
+      "service": "Garage Floor Epoxy",
+      "neighborhood": "Beaches Town Center",
+      "metaDescription": "Expert garage floor epoxy installation in Beaches Town Center, FL. Jacksonville Epoxy Flooring Pros - licensed, insured, 15-year warranty. Call for free quote."
+    },
+    {
+      "slug": "garage-epoxy-in-intracoastal-west",
+      "type": "service-neighborhood",
+      "title": "Garage Floor Epoxy in Intracoastal West, Jacksonville | Jacksonville Epoxy Flooring Pros",
+      "url": "/neighborhoods/garage-epoxy-in-intracoastal-west.html",
+      "service": "Garage Floor Epoxy",
+      "neighborhood": "Intracoastal West",
+      "metaDescription": "Looking for garage floor epoxy in Intracoastal West? Jacksonville Epoxy Flooring Pros offers expert installation with 15-year warranty. Serving Intracoastal West homeowners."
+    },
+    {
+      "slug": "garage-epoxy-in-fleming-island",
+      "type": "service-neighborhood",
+      "title": "Garage Floor Epoxy in Fleming Island, Jacksonville | Jacksonville Epoxy Flooring Pros",
+      "url": "/neighborhoods/garage-epoxy-in-fleming-island.html",
+      "service": "Garage Floor Epoxy",
+      "neighborhood": "Fleming Island",
+      "metaDescription": "Fleming Island's trusted garage floor epoxy contractor. $1,500-3,500, 15-year warranty. Get your free estimate today."
+    },
+    {
+      "slug": "garage-epoxy-in-orange-park",
+      "type": "service-neighborhood",
+      "title": "Garage Floor Epoxy in Orange Park, Jacksonville | Jacksonville Epoxy Flooring Pros",
+      "url": "/neighborhoods/garage-epoxy-in-orange-park.html",
+      "service": "Garage Floor Epoxy",
+      "neighborhood": "Orange Park",
+      "metaDescription": "Expert garage floor epoxy installation in Orange Park, FL. Jacksonville Epoxy Flooring Pros - licensed, insured, 15-year warranty. Call for free quote."
+    },
+    {
+      "slug": "garage-epoxy-in-middleburg",
+      "type": "service-neighborhood",
+      "title": "Garage Floor Epoxy in Middleburg, Jacksonville | Jacksonville Epoxy Flooring Pros",
+      "url": "/neighborhoods/garage-epoxy-in-middleburg.html",
+      "service": "Garage Floor Epoxy",
+      "neighborhood": "Middleburg",
+      "metaDescription": "Middleburg's trusted garage floor epoxy contractor. $1,500-3,500, 15-year warranty. Get your free estimate today."
+    },
+    {
+      "slug": "garage-epoxy-in-westside",
+      "type": "service-neighborhood",
+      "title": "Garage Floor Epoxy in Westside, Jacksonville | Jacksonville Epoxy Flooring Pros",
+      "url": "/neighborhoods/garage-epoxy-in-westside.html",
+      "service": "Garage Floor Epoxy",
+      "neighborhood": "Westside",
+      "metaDescription": "Professional garage floor epoxy services in Westside, Jacksonville. 15-year warranty, licensed contractors. Free quotes for Westside residents."
+    },
+    {
+      "slug": "garage-epoxy-in-cecil-commerce-center",
+      "type": "service-neighborhood",
+      "title": "Garage Floor Epoxy in Cecil Commerce Center, Jacksonville | Jacksonville Epoxy Flooring Pros",
+      "url": "/neighborhoods/garage-epoxy-in-cecil-commerce-center.html",
+      "service": "Garage Floor Epoxy",
+      "neighborhood": "Cecil Commerce Center",
+      "metaDescription": "Looking for garage floor epoxy in Cecil Commerce Center? Jacksonville Epoxy Flooring Pros offers expert installation with 15-year warranty. Serving Cecil Commerce Center homeowners."
+    },
+    {
+      "slug": "garage-epoxy-in-argyle-forest",
+      "type": "service-neighborhood",
+      "title": "Garage Floor Epoxy in Argyle Forest, Jacksonville | Jacksonville Epoxy Flooring Pros",
+      "url": "/neighborhoods/garage-epoxy-in-argyle-forest.html",
+      "service": "Garage Floor Epoxy",
+      "neighborhood": "Argyle Forest",
+      "metaDescription": "Looking for garage floor epoxy in Argyle Forest? Jacksonville Epoxy Flooring Pros offers expert installation with 15-year warranty. Serving Argyle Forest homeowners."
+    },
+    {
+      "slug": "garage-epoxy-in-greenland",
+      "type": "service-neighborhood",
+      "title": "Garage Floor Epoxy in Greenland, Jacksonville | Jacksonville Epoxy Flooring Pros",
+      "url": "/neighborhoods/garage-epoxy-in-greenland.html",
+      "service": "Garage Floor Epoxy",
+      "neighborhood": "Greenland",
+      "metaDescription": "Looking for garage floor epoxy in Greenland? Jacksonville Epoxy Flooring Pros offers expert installation with 15-year warranty. Serving Greenland homeowners."
+    }
+  ]
+}
