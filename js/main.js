@@ -197,4 +197,150 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
+    // ========================================
+    // Scroll Animations (Intersection Observer)
+    // ========================================
+    const animateOnScrollElements = document.querySelectorAll('.service-card, .trust-card, .testimonial-card, .before-after-card, .process-step, .portfolio-item');
+
+    animateOnScrollElements.forEach((el, index) => {
+        el.classList.add('animate-on-scroll');
+        el.classList.add('delay-' + ((index % 4) + 1));
+    });
+
+    const observerOptions = {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
+    };
+
+    const scrollObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('animated');
+                scrollObserver.unobserve(entry.target);
+            }
+        });
+    }, observerOptions);
+
+    document.querySelectorAll('.animate-on-scroll').forEach(el => {
+        scrollObserver.observe(el);
+    });
+
+    // ========================================
+    // Counter Animation for Trust Numbers
+    // ========================================
+    const counterElements = document.querySelectorAll('.trust-number');
+    let countersAnimated = false;
+
+    function animateCounters() {
+        if (countersAnimated) return;
+
+        counterElements.forEach(counter => {
+            const text = counter.textContent;
+            const match = text.match(/^([\d.]+)/);
+            if (!match) return;
+
+            const target = parseFloat(match[1]);
+            const suffix = text.replace(match[1], '');
+            const duration = 2000;
+            const steps = 60;
+            const increment = target / steps;
+            let current = 0;
+            const isDecimal = target % 1 !== 0;
+
+            const timer = setInterval(() => {
+                current += increment;
+                if (current >= target) {
+                    current = target;
+                    clearInterval(timer);
+                }
+                counter.innerHTML = (isDecimal ? current.toFixed(1) : Math.floor(current)) + suffix;
+            }, duration / steps);
+        });
+
+        countersAnimated = true;
+    }
+
+    // Observe trust section for counter animation
+    const trustSection = document.querySelector('.why-choose-us');
+    if (trustSection) {
+        const counterObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    animateCounters();
+                    counterObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.3 });
+
+        counterObserver.observe(trustSection);
+    }
+
+    // ========================================
+    // Sticky CTA Button
+    // ========================================
+    // Create sticky CTA element
+    const stickyCTA = document.createElement('div');
+    stickyCTA.className = 'sticky-cta';
+    stickyCTA.innerHTML = `
+        <a href="tel:+19045550199" class="sticky-cta-btn">
+            <i class="ph ph-phone"></i>
+            <span>Call Now</span>
+        </a>
+    `;
+    document.body.appendChild(stickyCTA);
+
+    // Show/hide sticky CTA based on scroll
+    const hero = document.querySelector('.hero');
+    const heroHeight = hero ? hero.offsetHeight : 600;
+
+    function handleStickyCTA() {
+        if (window.scrollY > heroHeight * 0.8) {
+            stickyCTA.classList.add('visible');
+        } else {
+            stickyCTA.classList.remove('visible');
+        }
+    }
+
+    window.addEventListener('scroll', handleStickyCTA);
+    handleStickyCTA();
+
+    // ========================================
+    // Subtle Parallax on Hero Background
+    // ========================================
+    const heroBackground = document.querySelector('.hero-background');
+
+    if (heroBackground && window.innerWidth > 768) {
+        window.addEventListener('scroll', () => {
+            const scrolled = window.scrollY;
+            if (scrolled < heroHeight) {
+                heroBackground.style.transform = `translateY(${scrolled * 0.3}px)`;
+            }
+        });
+    }
+
+    // ========================================
+    // Card Tilt Effect (Desktop only)
+    // ========================================
+    if (window.innerWidth > 1024) {
+        const tiltCards = document.querySelectorAll('.service-card, .trust-card');
+
+        tiltCards.forEach(card => {
+            card.addEventListener('mousemove', (e) => {
+                const rect = card.getBoundingClientRect();
+                const x = e.clientX - rect.left;
+                const y = e.clientY - rect.top;
+                const centerX = rect.width / 2;
+                const centerY = rect.height / 2;
+                const rotateX = (y - centerY) / 20;
+                const rotateY = (centerX - x) / 20;
+
+                card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-8px)`;
+            });
+
+            card.addEventListener('mouseleave', () => {
+                card.style.transform = 'perspective(1000px) rotateX(0) rotateY(0) translateY(0)';
+            });
+        });
+    }
+
 });
