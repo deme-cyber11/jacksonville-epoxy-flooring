@@ -1,112 +1,266 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
+  <!-- Homepage -->
   <url>
     <loc>https://904epoxyfloors.com/</loc>
-    <lastmod>2026-02-05</lastmod>
+    <lastmod>2026-02-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
+
+  <!-- Neighborhood Pages -->
   <url>
-    <loc>https://904epoxyfloors.com/#about</loc>
-    <lastmod>2026-02-05</lastmod>
+    <loc>https://904epoxyfloors.com/neighborhoods/garage-epoxy-in-san-marco.html</loc>
+    <lastmod>2026-02-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://904epoxyfloors.com/#services</loc>
-    <lastmod>2026-02-05</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://904epoxyfloors.com/#contact</loc>
-    <lastmod>2026-02-05</lastmod>
+    <loc>https://904epoxyfloors.com/neighborhoods/garage-epoxy-in-riverside.html</loc>
+    <lastmod>2026-02-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://904epoxyfloors.com/#service-garage-epoxy</loc>
-    <lastmod>2026-02-05</lastmod>
+    <loc>https://904epoxyfloors.com/neighborhoods/garage-epoxy-in-avondale.html</loc>
+    <lastmod>2026-02-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://904epoxyfloors.com/#service-metallic-epoxy</loc>
-    <lastmod>2026-02-05</lastmod>
+    <loc>https://904epoxyfloors.com/neighborhoods/garage-epoxy-in-ortega.html</loc>
+    <lastmod>2026-02-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://904epoxyfloors.com/#service-commercial-epoxy</loc>
-    <lastmod>2026-02-05</lastmod>
+    <loc>https://904epoxyfloors.com/neighborhoods/garage-epoxy-in-mandarin.html</loc>
+    <lastmod>2026-02-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://904epoxyfloors.com/#service-flake-epoxy</loc>
-    <lastmod>2026-02-05</lastmod>
+    <loc>https://904epoxyfloors.com/neighborhoods/garage-epoxy-in-julington-creek.html</loc>
+    <lastmod>2026-02-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://904epoxyfloors.com/#service-concrete-polishing</loc>
-    <lastmod>2026-02-05</lastmod>
+    <loc>https://904epoxyfloors.com/neighborhoods/garage-epoxy-in-fruit-cove.html</loc>
+    <lastmod>2026-02-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://904epoxyfloors.com/#service-industrial-coatings</loc>
-    <lastmod>2026-02-05</lastmod>
+    <loc>https://904epoxyfloors.com/neighborhoods/garage-epoxy-in-baymeadows.html</loc>
+    <lastmod>2026-02-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://904epoxyfloors.com/#location-jacksonville</loc>
-    <lastmod>2026-02-05</lastmod>
+    <loc>https://904epoxyfloors.com/neighborhoods/garage-epoxy-in-deerwood.html</loc>
+    <lastmod>2026-02-07</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://904epoxyfloors.com/#location-jax-beach</loc>
-    <lastmod>2026-02-05</lastmod>
+    <loc>https://904epoxyfloors.com/neighborhoods/garage-epoxy-in-tinseltown.html</loc>
+    <lastmod>2026-02-07</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://904epoxyfloors.com/#location-orange-park</loc>
-    <lastmod>2026-02-05</lastmod>
+    <loc>https://904epoxyfloors.com/neighborhoods/garage-epoxy-in-atlantic-beach.html</loc>
+    <lastmod>2026-02-07</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://904epoxyfloors.com/#location-fleming-island</loc>
-    <lastmod>2026-02-05</lastmod>
+    <loc>https://904epoxyfloors.com/neighborhoods/garage-epoxy-in-neptune-beach.html</loc>
+    <lastmod>2026-02-07</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://904epoxyfloors.com/#location-st-augustine</loc>
-    <lastmod>2026-02-05</lastmod>
+    <loc>https://904epoxyfloors.com/neighborhoods/garage-epoxy-in-jacksonville-beach.html</loc>
+    <lastmod>2026-02-07</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://904epoxyfloors.com/#location-ponte-vedra</loc>
-    <lastmod>2026-02-05</lastmod>
+    <loc>https://904epoxyfloors.com/neighborhoods/garage-epoxy-in-ponte-vedra-beach.html</loc>
+    <lastmod>2026-02-07</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://904epoxyfloors.com/#location-mandarin</loc>
-    <lastmod>2026-02-05</lastmod>
+    <loc>https://904epoxyfloors.com/neighborhoods/garage-epoxy-in-ponte-vedra.html</loc>
+    <lastmod>2026-02-07</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://904epoxyfloors.com/#location-fernandina-beach</loc>
-    <lastmod>2026-02-05</lastmod>
+    <loc>https://904epoxyfloors.com/neighborhoods/garage-epoxy-in-arlington.html</loc>
+    <lastmod>2026-02-07</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
   </url>
+  <url>
+    <loc>https://904epoxyfloors.com/neighborhoods/garage-epoxy-in-regency.html</loc>
+    <lastmod>2026-02-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://904epoxyfloors.com/neighborhoods/garage-epoxy-in-northside.html</loc>
+    <lastmod>2026-02-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://904epoxyfloors.com/neighborhoods/garage-epoxy-in-springfield.html</loc>
+    <lastmod>2026-02-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://904epoxyfloors.com/neighborhoods/garage-epoxy-in-murray-hill.html</loc>
+    <lastmod>2026-02-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://904epoxyfloors.com/neighborhoods/garage-epoxy-in-five-points.html</loc>
+    <lastmod>2026-02-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://904epoxyfloors.com/neighborhoods/garage-epoxy-in-downtown-jacksonville.html</loc>
+    <lastmod>2026-02-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://904epoxyfloors.com/neighborhoods/garage-epoxy-in-san-jose.html</loc>
+    <lastmod>2026-02-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://904epoxyfloors.com/neighborhoods/garage-epoxy-in-lakewood.html</loc>
+    <lastmod>2026-02-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://904epoxyfloors.com/neighborhoods/garage-epoxy-in-venetia.html</loc>
+    <lastmod>2026-02-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://904epoxyfloors.com/neighborhoods/garage-epoxy-in-deercreek.html</loc>
+    <lastmod>2026-02-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://904epoxyfloors.com/neighborhoods/garage-epoxy-in-nocatee.html</loc>
+    <lastmod>2026-02-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://904epoxyfloors.com/neighborhoods/garage-epoxy-in-world-golf-village.html</loc>
+    <lastmod>2026-02-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://904epoxyfloors.com/neighborhoods/garage-epoxy-in-bartram-park.html</loc>
+    <lastmod>2026-02-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://904epoxyfloors.com/neighborhoods/garage-epoxy-in-oakleaf.html</loc>
+    <lastmod>2026-02-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://904epoxyfloors.com/neighborhoods/garage-epoxy-in-town-center.html</loc>
+    <lastmod>2026-02-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://904epoxyfloors.com/neighborhoods/garage-epoxy-in-southside.html</loc>
+    <lastmod>2026-02-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://904epoxyfloors.com/neighborhoods/garage-epoxy-in-st-nicholas.html</loc>
+    <lastmod>2026-02-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://904epoxyfloors.com/neighborhoods/garage-epoxy-in-beaches-town-center.html</loc>
+    <lastmod>2026-02-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://904epoxyfloors.com/neighborhoods/garage-epoxy-in-intracoastal-west.html</loc>
+    <lastmod>2026-02-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://904epoxyfloors.com/neighborhoods/garage-epoxy-in-fleming-island.html</loc>
+    <lastmod>2026-02-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://904epoxyfloors.com/neighborhoods/garage-epoxy-in-orange-park.html</loc>
+    <lastmod>2026-02-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://904epoxyfloors.com/neighborhoods/garage-epoxy-in-middleburg.html</loc>
+    <lastmod>2026-02-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://904epoxyfloors.com/neighborhoods/garage-epoxy-in-westside.html</loc>
+    <lastmod>2026-02-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://904epoxyfloors.com/neighborhoods/garage-epoxy-in-cecil-commerce-center.html</loc>
+    <lastmod>2026-02-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://904epoxyfloors.com/neighborhoods/garage-epoxy-in-argyle-forest.html</loc>
+    <lastmod>2026-02-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://904epoxyfloors.com/neighborhoods/garage-epoxy-in-greenland.html</loc>
+    <lastmod>2026-02-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
 </urlset>
