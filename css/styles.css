@@ -844,6 +844,16 @@ nav {
     margin-left: 0;
 }
 
+.avatar-initial {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 1rem;
+    color: white;
+    font-family: var(--font-heading);
+}
+
 .avatar-count {
     width: 44px;
     height: 44px;

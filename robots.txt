@@ -1,4 +1,9 @@
+# robots.txt for 904epoxyfloors.com
 User-agent: *
 Allow: /
 
+# Sitemap location
 Sitemap: https://904epoxyfloors.com/sitemap.xml
+
+# Crawl-delay (optional, be nice to servers)
+Crawl-delay: 1
