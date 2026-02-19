@@ -1,0 +1,151 @@
+{
+  "site": "jacksonville-epoxy-flooring",
+  "site_url": "https://904epoxyfloors.com",
+  "output_dir": "/Users/costa.demetral/Desktop/Jacksonville-Epoxy-Flooring/images",
+  "location": "Jacksonville, Florida",
+  "service_areas": ["Jacksonville", "Jacksonville Beach", "Ponte Vedra", "Orange Park", "Fleming Island", "St. Augustine", "Mandarin", "Fernandina Beach"],
+  "batches": {
+    "hero": {
+      "description": "Hero and before/after showcase images",
+      "output_subdir": "hero",
+      "images": [
+        {
+          "name": "hero-after",
+          "prompt": "Professional photograph of stunning metallic epoxy garage floor in Jacksonville Florida home, pearl silver and charcoal swirl pattern, high gloss reflective finish, modern 3-car garage interior, LED strip lighting reflecting off floor, pristine condition, luxury car visible, professional real estate photography, 24mm wide angle lens, soft natural lighting from open garage door, photorealistic, natural imperfections, authentic"
+        },
+        {
+          "name": "hero-before",
+          "prompt": "Documentary photograph of old concrete garage floor needing epoxy coating, visible oil stains and tire marks, minor cracks and pitting, dusty gray surface, typical Florida garage interior with humidity damage, overcast lighting from open door, honest realistic condition photo, photorealistic"
+        },
+        {
+          "name": "showcase-after",
+          "prompt": "High-end photograph of completed metallic epoxy floor transformation, copper and bronze flowing swirl design, stunning 3D depth effect, luxury Florida garage with premium vehicles, organized tool storage visible, late afternoon golden light streaming in, professional installation quality, architectural interior photography, photorealistic, authentic"
+        },
+        {
+          "name": "showcase-before",
+          "prompt": "Photograph of worn concrete garage floor before epoxy treatment, visible moisture stains from Florida humidity, minor concrete spalling, oil marks, faded gray appearance, typical Jacksonville garage showing age, documentary style, natural lighting, photorealistic"
+        }
+      ]
+    },
+    "gallery": {
+      "description": "Portfolio gallery - completed project photos",
+      "output_subdir": "gallery",
+      "images": [
+        {
+          "name": "ponte-vedra-metallic",
+          "prompt": "Professional interior photograph of luxury metallic epoxy garage floor, pearl white and silver swirl pattern with subtle blue undertones, high gloss mirror finish, upscale Ponte Vedra Florida 3-car garage, luxury sports car parked, organized premium storage, natural light from windows, real estate photography style, photorealistic, authentic"
+        },
+        {
+          "name": "jax-beach-flake",
+          "prompt": "Professional photograph of decorative flake epoxy floor in Jacksonville Beach garage, beach-inspired blue and tan color flake system, anti-slip textured surface, coastal Florida home interior, surfboards stored against wall, sandy beach aesthetic, bright natural lighting, interior photography, photorealistic, natural imperfections"
+        },
+        {
+          "name": "orange-park-commercial",
+          "prompt": "Professional photograph of commercial epoxy floor installation in Orange Park Florida auto shop, battleship gray industrial epoxy coating, high durability finish, professional garage with lift and tool chests, mechanic environment, fluorescent and natural lighting mix, commercial real estate photography, photorealistic"
+        },
+        {
+          "name": "st-augustine-showroom",
+          "prompt": "High-end photograph of polished concrete floor in St Augustine Florida retail showroom, glossy reflective surface, modern commercial interior with display cases, minimalist aesthetic, large windows with natural daylight, architectural interior photography, photorealistic, authentic"
+        },
+        {
+          "name": "mandarin-residential",
+          "prompt": "Professional photograph of granite flake epoxy garage floor in Mandarin Jacksonville home, black gray and white flake pattern, organized residential garage with workbench, standard 2-car garage, warm lighting, clean professional finish, real estate interior photography, photorealistic"
+        },
+        {
+          "name": "fleming-island-luxury",
+          "prompt": "Editorial photograph of premium metallic epoxy floor, champagne gold and bronze flowing pattern, upscale Fleming Island Florida home garage, golf cart parked alongside luxury vehicle, custom cabinetry, professional lighting, luxury lifestyle photography, photorealistic, natural imperfections"
+        }
+      ]
+    },
+    "process": {
+      "description": "4-step process images",
+      "output_subdir": "process",
+      "images": [
+        {
+          "name": "consultation",
+          "prompt": "Professional photograph of epoxy flooring contractor meeting with homeowner in Florida garage, contractor in uniform holding clipboard discussing project, pointing at concrete floor, friendly consultation interaction, bright garage interior, documentary business photography, photorealistic"
+        },
+        {
+          "name": "surface-prep",
+          "prompt": "Professional photograph of concrete floor surface preparation for epoxy, diamond grinding machine in action, dust collection visible, worker in safety gear operating equipment, Florida residential garage, industrial equipment at work, construction documentation photography, photorealistic, authentic"
+        },
+        {
+          "name": "epoxy-application",
+          "prompt": "Professional photograph of epoxy floor coating being applied, professional installer using squeegee and roller on fresh metallic epoxy, silver swirl pattern being created, Florida garage environment, protective gear worn, mid-application process, construction photography, photorealistic"
+        },
+        {
+          "name": "final-inspection",
+          "prompt": "Professional photograph of completed epoxy floor final inspection, contractor and homeowner examining stunning reflective metallic finish together, satisfied customer interaction, pristine glossy surface, bright Florida garage, quality check documentation, photorealistic"
+        }
+      ]
+    },
+    "services": {
+      "description": "Service-specific detail images",
+      "output_subdir": "services",
+      "images": [
+        {
+          "name": "garage-epoxy-standard",
+          "prompt": "Professional photograph of standard solid color garage floor epoxy coating, battleship gray finish with professional edging, typical Florida 2-car residential garage, clean organized space, subtle texture for traction, bright natural lighting, real estate interior photography, photorealistic"
+        },
+        {
+          "name": "metallic-epoxy-detail",
+          "prompt": "Close-up professional photograph of metallic epoxy floor surface detail, stunning 3D depth with silver copper and charcoal swirls, high gloss reflective finish, artistic macro photography showing material beauty, soft lighting, product photography style, photorealistic"
+        },
+        {
+          "name": "commercial-warehouse",
+          "prompt": "Professional photograph of industrial epoxy floor in Jacksonville warehouse, gray heavy-duty coating with safety line markings, forklift visible in background, high bay lighting, expansive commercial space, professional industrial photography, photorealistic"
+        },
+        {
+          "name": "flake-system-closeup",
+          "prompt": "Close-up professional photograph of decorative vinyl flake epoxy surface, multi-colored chips in blue gray white pattern, textured anti-slip surface visible, product detail photography, soft studio-style lighting, photorealistic, authentic texture"
+        },
+        {
+          "name": "polished-concrete",
+          "prompt": "Professional photograph of polished concrete floor in modern Florida commercial space, mirror-like reflective surface, aggregate slightly visible, minimalist modern interior, large windows with natural light, architectural interior photography, photorealistic"
+        },
+        {
+          "name": "industrial-coating",
+          "prompt": "Professional photograph of heavy-duty industrial floor coating in Jacksonville manufacturing facility, chemical-resistant surface, safety yellow line markings, industrial equipment in background, professional quality installation, commercial documentation photography, photorealistic"
+        }
+      ]
+    },
+    "locations": {
+      "description": "Location page featured images",
+      "output_subdir": "locations",
+      "images": [
+        {
+          "name": "jacksonville-featured",
+          "prompt": "Professional photograph of metallic epoxy garage floor in Jacksonville Florida suburban home, copper and gray swirl pattern, standard 2-car garage with organized storage, Florida residential architecture visible through open door, real estate photography, photorealistic"
+        },
+        {
+          "name": "jax-beach-featured",
+          "prompt": "Professional photograph of beach-themed flake epoxy floor in Jacksonville Beach coastal home garage, sandy tan and ocean blue flake pattern, surfboards and beach gear visible, coastal casual aesthetic, bright Florida sunshine, lifestyle photography, photorealistic"
+        },
+        {
+          "name": "ponte-vedra-featured",
+          "prompt": "High-end photograph of premium metallic epoxy floor in luxury Ponte Vedra garage, silver pearl swirl with subtle blue tones, luxury vehicles and golf cart, upscale Florida home interior, professional lighting, luxury real estate photography, photorealistic"
+        },
+        {
+          "name": "orange-park-featured",
+          "prompt": "Professional photograph of solid color epoxy floor in Orange Park Florida family home garage, professional charcoal gray finish, organized family garage with bikes and tools, warm suburban feel, natural lighting, real estate photography, photorealistic"
+        }
+      ]
+    },
+    "backgrounds": {
+      "description": "CTA and texture backgrounds",
+      "output_subdir": "backgrounds",
+      "images": [
+        {
+          "name": "cta-metallic-texture",
+          "prompt": "Abstract close-up photograph of metallic epoxy surface texture, flowing silver and charcoal swirl pattern, high gloss reflective surface, soft diffused lighting, suitable for text overlay background, minimalist, artistic product photography, photorealistic"
+        },
+        {
+          "name": "cta-flake-texture",
+          "prompt": "Abstract close-up photograph of decorative flake epoxy surface, multi-colored vinyl chips in professional gray pattern, textured surface detail, soft even lighting, suitable for text overlay, minimalist background photography, photorealistic"
+        }
+      ]
+    }
+  },
+  "total_images": 26,
+  "estimated_cost": "$1.43"
+}
