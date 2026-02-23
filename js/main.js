@@ -56,6 +56,19 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     // ========================================
+    // Mobile Dropdown Toggle
+    // ========================================
+    document.querySelectorAll('.nav-dropdown > a').forEach(function(toggle) {
+        toggle.addEventListener('click', function(e) {
+            if (window.innerWidth <= 768) {
+                e.preventDefault();
+                var parent = this.parentElement;
+                parent.classList.toggle('open');
+            }
+        });
+    });
+
+    // ========================================
     // SPA Navigation
     // ========================================
     function showPage(pageId) {

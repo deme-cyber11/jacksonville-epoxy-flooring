@@ -2395,6 +2395,34 @@ footer {
 .fade-in-delay-3 { transition-delay: 0.3s; }
 
 /* ============================================
+   CONTENT SPACING - Paragraphs & Headings
+   ============================================ */
+.content-section p,
+.about-text p,
+.location-text p,
+.service-full-content p,
+.ba-info p {
+    margin-bottom: 1.5rem;
+}
+
+.content-section h2,
+.about-text h2,
+.location-text h2 {
+    margin-top: 3rem;
+}
+
+.content-section h3,
+.about-text h3,
+.location-text h3 {
+    margin-top: 2.5rem;
+}
+
+/* Hero gap fix */
+.page-hero + section {
+    padding-top: 3rem;
+}
+
+/* ============================================
    RESPONSIVE
    ============================================ */
 @media (max-width: 1200px) {
@@ -2488,6 +2516,20 @@ footer {
 
     .mobile-menu-btn {
         display: block;
+    }
+
+    /* Mobile dropdown fix */
+    .dropdown-menu {
+        display: none;
+    }
+
+    .nav-dropdown.open .dropdown-menu {
+        display: block;
+    }
+
+    /* Hero gap fix - mobile */
+    .page-hero + section {
+        padding-top: 2rem;
     }
 
     .services-grid {
