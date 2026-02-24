@@ -295,7 +295,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const stickyCTA = document.createElement('div');
     stickyCTA.className = 'sticky-cta';
     stickyCTA.innerHTML = `
-        <a href="tel:+19045550199" class="sticky-cta-btn">
+        <a href="tel:+19042044753" class="sticky-cta-btn">
             <i class="ph ph-phone"></i>
             <span>Call Now</span>
         </a>
