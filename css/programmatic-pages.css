@@ -299,3 +299,27 @@
 .nearby-links{display:flex;flex-wrap:wrap;gap:.75rem;justify-content:center}
 .nearby-link{display:inline-block;padding:.5rem 1.25rem;background:#fff;color:#0f2744;border:1px solid #c9a227;border-radius:6px;text-decoration:none;font-family:'Inter',sans-serif;font-weight:500;font-size:.9rem;transition:all .2s}
 .nearby-link:hover{background:#c9a227;color:#0f2744}
+
+/* ── Mobile Tap Targets (M10/M11) ── */
+@media (max-width: 768px) {
+    .btn, a.btn, button.btn {
+        min-height: 48px;
+        padding: 14px 24px;
+        font-size: 1rem;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+    }
+    a[href^="tel"] {
+        min-height: 44px;
+        display: inline-flex;
+        align-items: center;
+    }
+    input:not([type="hidden"]):not([type="checkbox"]):not([type="radio"]),
+    select,
+    textarea {
+        min-height: 48px;
+        font-size: 16px !important;
+        padding: 12px 16px;
+    }
+}
