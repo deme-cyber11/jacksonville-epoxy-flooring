@@ -1,6 +1,13 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
-  <rect width="256" height="256" rx="52" fill="#1a1a2e"/>
-  <g transform="translate(28,28) scale(0.78125)">
-    <path d="M232,84H212V64a20,20,0,0,0-20-20H52A20,20,0,0,0,32,64V84H16a12,12,0,0,0,0,24H32v20a20,20,0,0,0,20,20H192a20,20,0,0,0,20-20V108h16V155L130.5,182.8A20.09,20.09,0,0,0,116,202v30a12,12,0,0,0,24,0V205.05l97.5-27.85A20.09,20.09,0,0,0,252,158V104A20,20,0,0,0,232,84Zm-44,40H56V68H188Z"/>
-  </g>
+  <rect width="256" height="256" rx="52" fill="#0f2744"/>
+  <text
+    x="128"
+    y="168"
+    font-family="-apple-system, 'Helvetica Neue', Arial, sans-serif"
+    font-size="76"
+    font-weight="900"
+    fill="white"
+    text-anchor="middle"
+    letter-spacing="-4"
+  >JE</text>
 </svg>
