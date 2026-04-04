@@ -41,7 +41,7 @@
   }
   </script>
 
-  <link rel="stylesheet" href="../css/styles.v1.css">
+  <link rel="stylesheet" href="../css/style.v2.5.css?v=1">
   <style>
     .location-hero { background: linear-gradient(135deg, #1e3a5f 0%, #2c5282 100%); color: white; padding: 60px 20px; text-align: center; }
     .location-hero h1 { font-size: 2.2rem; font-weight: 800; margin-bottom: 16px; line-height: 1.2; }
@@ -85,17 +85,42 @@
 .floating-cta a:hover .fcta-label{opacity:1}
 @media(min-width:769px){.floating-cta{display:none!important}}
 </style>
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 </head>
 <body>
-  <header><nav><a href="/">904 Epoxy Floors</a><a href="tel:+19042044753">(904) 204-4753</a></nav></header>
-  <nav class="breadcrumb" aria-label="Breadcrumb"><a href="/">Home</a> &rsaquo; <a href="/locations/">Locations</a> &rsaquo; <span>Epoxy Flooring in Orange Park</span></nav>
+  <nav class="nav" id="nav">
+  <div class="nav__inner">
+    <a href="/" class="nav__logo">JAX <span>Epoxy</span></a>
+    <ul class="nav__links" id="navLinks">
+      <li><a href="/services/">Services</a></li>
+      <li><a href="/locations/">Areas</a></li>
+      <li><a href="/blog/">Blog</a></li>
+      <li><a href="/contact.html#contact">Contact</a></li>
+      <li><a href="tel:+19042044753" class="nav__cta">Call Now</a></li>
+    </ul>
+    <button class="nav__toggle" id="navToggle" aria-label="Open menu">
+      <svg viewBox="0 0 24 24"><path d="M3 12h18M3 6h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/></svg>
+    </button>
+  </div>
+</nav>
+<nav class="breadcrumb" aria-label="Breadcrumb"><a href="/">Home</a> &rsaquo; <a href="/locations/">Locations</a> &rsaquo; <span>Epoxy Flooring in Orange Park</span></nav>
 
-  <section class="location-hero">
-    <h1>Epoxy Garage Floors in Orange Park — Free Estimates, Coatings That Last</h1>
-    <p>Serving Orange Park, Clay County &amp; surrounding Northeast Florida communities &middot; We call back within 1 hour</p>
-    <a href="tel:+19042044753" class="hero-phone">&#128222; (904) 204-4753</a>
-    <img src="/images/loc-orange-park.webp" alt="Epoxy flooring in Orange Park FL" loading="lazy" style="width:100%;height:auto;border-radius:8px;margin:1.5rem 0;display:block;" width="800" height="533">
-  </section>
+  <section class="hero hero--inner">
+  <div class="container">
+    <div class="hero__content">
+      <div class="hero__badge">904 Epoxy Floors &mdash; Jacksonville, FL</div>
+      <h1 class="hero__title">Epoxy Garage Floors in Orange Park — Free Estimates, Coatings That Last</h1>
+      <p class="hero__desc">Serving Orange Park, Clay County &amp; surrounding Northeast Florida communities &middot; We call back within 1 hour</p>
+      <div class="hero__buttons">
+        <a href="tel:+19042044753" class="btn btn--primary">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+          Call (904) 204-4753
+        </a>
+        <a href="/contact.html#contact" class="btn btn--outline">Get Free Estimate</a>
+      </div>
+    </div>
+  </div>
+</section>
 
   <div class="location-content">
 
@@ -179,7 +204,7 @@
     <section class="cta-section">
       <h2>Ready to Transform Your Orange Park Garage?</h2>
       <p>Free on-site estimates. Written quote before any work starts. Coatings built for Florida's climate.</p>
-      <a href="tel:+19042044753" class="cta-button">&#128222; Call (904) 204-4753</a>
+      <a href="tel:+19042044753" class="cta-button"> Call (904) 204-4753</a>
       <p style="opacity:0.8; font-size:0.9rem; margin-top:12px;">Or <a href="/" style="color:#93c5fd;">visit our main Jacksonville page</a></p>
     </section>
 
@@ -197,23 +222,82 @@
 
   </div>
 
-  <footer>
-    <p>&copy; 2026 <a href="/">904 Epoxy Floors</a>. Serving Orange Park, Jacksonville, and surrounding Florida communities.</p>
-    <p><a href="tel:+19042044753">(904) 204-4753</a> | <a href="/">Home</a> | <a href="/locations/">All Service Areas</a></p>
-  </footer>
-
-<div class="floating-cta" id="floating-cta">
-  <a href="tel:+19042044753" class="fcta-call" aria-label="Call Now"><span class="fcta-label">Call Now</span><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"/></svg></a>
-  <a href="/#contact" class="fcta-quote" aria-label="Free Quote"><span class="fcta-label">Free Quote</span><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg></a>
+  
+<footer class="footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div class="footer__col footer__col--brand">
+        <div class="footer__brand-name">JAX <span>Epoxy</span></div>
+        <p class="footer__brand-desc">Jacksonville&rsquo;s trusted epoxy flooring experts. Garage floors, metallic &amp; commercial coatings built for Florida&rsquo;s humidity. 15-year warranty on every job.</p>
+        <div class="footer__contact-item"><a href="tel:+19042044753">(904) 204-4753</a></div>
+        <div class="footer__contact-item"><a href="mailto:info@904epoxyfloors.com">info@904epoxyfloors.com</a></div>
+      </div>
+      <div class="footer__col">
+        <h4 class="footer__heading">Services</h4>
+        <ul class="footer__links">
+          <li><a href="/services/garage-floor-epoxy.html">Garage Floor Epoxy</a></li>
+          <li><a href="/services/metallic-epoxy.html">Metallic Epoxy</a></li>
+          <li><a href="/services/polyaspartic-coating.html">Polyaspartic Coating</a></li>
+          <li><a href="/services/commercial-epoxy.html">Commercial Epoxy</a></li>
+          <li><a href="/services/">All Services</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4 class="footer__heading">Service Areas</h4>
+        <ul class="footer__links">
+          <li><a href="/">Jacksonville</a></li>
+          <li><a href="/locations/orange-park.html">Orange Park</a></li>
+          <li><a href="/locations/fleming-island.html">Fleming Island</a></li>
+          <li><a href="/locations/st-augustine.html">St. Augustine</a></li>
+          <li><a href="/locations/ponte-vedra.html">Ponte Vedra</a></li>
+          <li><a href="/locations/fernandina-beach.html">Fernandina Beach</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4 class="footer__heading">Contact</h4>
+        <div class="footer__contact-item"><a href="tel:+19042044753">(904) 204-4753</a></div>
+        <div class="footer__contact-item">info@904epoxyfloors.com</div>
+        <div class="footer__contact-item">Jacksonville &amp; Northeast Florida</div>
+        <div class="footer__contact-item"><a href="/contact.html#contact">Get Free Estimate &rarr;</a></div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span class="footer__copy">&copy; 2026 Jacksonville Epoxy Flooring Pros. All rights reserved. FL Licensed Contractor.</span>
+      <div class="footer__legal">
+        <a href="/privacy-policy.html">Privacy Policy</a>
+        <a href="/sitemap.xml">Sitemap</a>
+      </div>
+    </div>
+  </div>
+</footer>
+<div class="mobile-cta">
+  <a href="tel:+19042044753" class="mobile-cta__btn mobile-cta__btn--call">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+    Call Now
+  </a>
+  <a href="/contact.html#contact" class="mobile-cta__btn mobile-cta__btn--estimate">Free Estimate</a>
 </div>
 <script>
-(function(){
-  var el=document.getElementById('floating-cta');
-  if(!el)return;
-  window.addEventListener('scroll',function(){
-    el.classList.toggle('visible',window.scrollY>80);
-  },{passive:true});
-})();
+document.documentElement.classList.add("js");
+var nav=document.getElementById('nav');
+if(nav)window.addEventListener('scroll',function(){nav.classList.toggle('scrolled',window.scrollY>60)},{passive:true});
+var nt=document.getElementById('navToggle');
+if(nt)nt.addEventListener('click',function(){document.getElementById('navLinks').classList.toggle('open');});
+document.querySelectorAll('.faq__question').forEach(function(btn){
+  btn.addEventListener('click',function(){
+    var item=btn.closest('.faq__item');
+    var isOpen=item.classList.contains('active');
+    document.querySelectorAll('.faq__item').forEach(function(i){i.classList.remove('active');});
+    if(!isOpen)item.classList.add('active');
+  });
+});
+var revEls=document.querySelectorAll('.reveal');
+if(revEls.length){
+  var obs=new IntersectionObserver(function(entries){
+    entries.forEach(function(e){if(e.isIntersecting){e.target.classList.add('visible');obs.unobserve(e.target);}});
+  },{threshold:0.15});
+  revEls.forEach(function(el){obs.observe(el);});
+}
 </script>
 </body>
 </html>

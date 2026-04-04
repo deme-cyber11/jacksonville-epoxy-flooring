@@ -28,11 +28,9 @@ gtag('config', 'G-ETEEE098BR');
     <link rel="icon" type="image/svg+xml" href="/favicon.svg">
     <link rel="sitemap" type="application/xml" href="/sitemap.xml">
 
-    <script defer src="https://unpkg.com/@phosphor-icons/web@2.0.3"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../css/styles.v1.css">
+    <link rel="stylesheet" href="../css/style.v2.5.css?v=1">
 
     <script type="application/ld+json">
     {
@@ -61,57 +59,32 @@ gtag('config', 'G-ETEEE098BR');
       y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
     })(window, document, "clarity", "script", "vqc7u895rm");
   </script>
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 </head>
 <body>
-    <header>
-        <nav>
-            <a href="/" class="logo">
-                <span class="logo-icon"><i class="ph ph-drop"></i></span>
-                <span class="logo-text">JAX Epoxy</span>
-            </a>
-            <ul class="nav-links">
-                <li class="dropdown">
-                    <a href="#">Services <i class="ph ph-caret-down dropdown-arrow"></i></a>
-                    <div class="dropdown-menu">
-                        <a href="/services/garage-floor-epoxy.html">Garage Floor Epoxy</a>
-                        <a href="/services/metallic-epoxy.html">Metallic Epoxy</a>
-                        <a href="/services/commercial-epoxy.html">Commercial Epoxy</a>
-                        <a href="/services/polyaspartic-coating.html">Polyaspartic Coating</a>
-                    </div>
-                </li>
-                <li class="dropdown">
-                    <a href="#">Areas <i class="ph ph-caret-down dropdown-arrow"></i></a>
-                    <div class="dropdown-menu">
-                        <a href="/locations/orange-park.html">Orange Park</a>
-                        <a href="/locations/fleming-island.html">Fleming Island</a>
-                        <a href="/locations/st-augustine.html">St. Augustine</a>
-                        <a href="/locations/ponte-vedra.html">Ponte Vedra</a>
-                        <a href="/locations/fernandina-beach.html">Fernandina Beach</a>
-                    </div>
-                </li>
-                <li><a href="/#about">About</a></li>
-                <li><a href="/#contact">Contact</a></li>
-                <li><a href="tel:+19042044753" class="nav-cta"><i class="ph ph-phone"></i> (904) 204-4753</a></li>
-            </ul>
-            <button class="mobile-menu-btn" aria-label="Toggle menu">
-                <i class="ph ph-list"></i>
-            </button>
-        </nav>
-    </header>
-
-    <div class="mobile-menu">
-        <div class="mobile-menu-header">
-            <span class="logo-text">JAX Epoxy</span>
-            <button class="mobile-menu-close" aria-label="Close menu"><i class="ph ph-x"></i></button>
-        </div>
-        <ul class="mobile-nav-links">
+    <nav class="nav" id="nav">
+  <div class="nav__inner">
+    <a href="/" class="nav__logo">JAX <span>Epoxy</span></a>
+    <ul class="nav__links" id="navLinks">
+      <li><a href="/services/">Services</a></li>
+      <li><a href="/locations/">Areas</a></li>
+      <li><a href="/blog/">Blog</a></li>
+      <li><a href="/contact.html#contact">Contact</a></li>
+      <li><a href="tel:+19042044753" class="nav__cta">Call Now</a></li>
+    </ul>
+    <button class="nav__toggle" id="navToggle" aria-label="Open menu">
+      <svg viewBox="0 0 24 24"><path d="M3 12h18M3 6h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/></svg>
+    </button>
+  </div>
+</nav>
+<ul class="mobile-nav-links">
             <li><a href="/">Home</a></li>
             <li><a href="/services/garage-floor-epoxy.html">Garage Floor Epoxy</a></li>
             <li><a href="/services/metallic-epoxy.html">Metallic Epoxy</a></li>
             <li><a href="/services/commercial-epoxy.html">Commercial Epoxy</a></li>
             <li><a href="/services/polyaspartic-coating.html">Polyaspartic Coating</a></li>
             <li><a href="/#about">About</a></li>
-            <li><a href="/#contact">Contact</a></li>
+            <li><a href="/contact.html#contact">Contact</a></li>
         </ul>
         <div class="mobile-menu-footer">
             <a href="tel:+19042044753" class="btn btn-primary btn-block">
@@ -121,13 +94,22 @@ gtag('config', 'G-ETEEE098BR');
     </div>
 
     <main>
-        <section class="page-hero page-hero-short">
-            <div class="hero-content">
-                <h1>Jacksonville Metallic Epoxy Flooring — One-of-a-Kind Custom Finishes</h1>
-                <p>Custom 3D metallic designs with UV-stable pigments — no two floors are exactly alike · Free on-site consultations</p>
-                <img src="/images/service-metallic-epoxy.webp" alt="Metallic epoxy flooring Jacksonville FL" loading="lazy" style="width:100%;height:auto;border-radius:8px;margin:1.5rem 0;display:block;" width="800" height="533">
-            </div>
-        </section>
+        <section class="hero hero--inner">
+  <div class="container">
+    <div class="hero__content">
+      <div class="hero__badge">904 Epoxy Floors &mdash; Jacksonville, FL</div>
+      <h1 class="hero__title">Jacksonville Metallic Epoxy Flooring — One-of-a-Kind Custom Finishes</h1>
+      <p class="hero__desc">Custom 3D metallic designs with UV-stable pigments — no two floors are exactly alike · Free on-site consultations</p>
+      <div class="hero__buttons">
+        <a href="tel:+19042044753" class="btn btn--primary">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+          Call (904) 204-4753
+        </a>
+        <a href="/contact.html#contact" class="btn btn--outline">Get Free Estimate</a>
+      </div>
+    </div>
+  </div>
+</section>
 
         <section class="location-content">
             <div class="container">
@@ -190,8 +172,8 @@ gtag('config', 'G-ETEEE098BR');
                         <p>Compare that to high-end tile: metallic epoxy installs in a day or two and creates a seamless surface with no grout lines to clean. For the aesthetic impact relative to cost and timeline, the comparison isn't close.</p>
 
                         <div class="location-cta" style="margin: 2rem 0;">
-                            <a href="/#contact" class="btn btn-primary btn-lg">Get a Free Metallic Epoxy Estimate</a>
-                            <a href="tel:+19042044753" class="btn btn-outline btn-lg"><i class="ph ph-phone"></i> (904) 204-4753</a>
+                            <a href="/contact.html#contact" class="btn btn-primary btn-lg">Get a Free Metallic Epoxy Estimate</a>
+                            <a href="tel:+19042044753" class="btn btn--outline btn-lg"><i class="ph ph-phone"></i> (904) 204-4753</a>
                         </div>
 
                         <h2>Frequently Asked Questions</h2>
@@ -229,7 +211,7 @@ gtag('config', 'G-ETEEE098BR');
                         <p>We schedule free on-site consultations for metallic epoxy across Jacksonville and Northeast Florida. Bring your vision — we'll show you what's achievable and at what cost. No commitment at the estimate stage.</p>
                         <div class="location-cta" style="margin: 1.5rem 0;">
                             <a href="tel:+19042044753" class="btn btn-primary btn-lg"><i class="ph ph-phone"></i> (904) 204-4753</a>
-                            <a href="/#contact" class="btn btn-outline btn-lg">Get Free Estimate</a>
+                            <a href="/contact.html#contact" class="btn btn--outline btn-lg">Get Free Estimate</a>
                         </div>
 
                     </div>
@@ -242,8 +224,8 @@ gtag('config', 'G-ETEEE098BR');
                 <h2>Create a Floor That's Uniquely Yours</h2>
                 <p>Custom metallic epoxy designs for Jacksonville homes and businesses. Free on-site consultations.</p>
                 <div class="cta-buttons">
-                    <a href="/#contact" class="btn btn-primary btn-lg">Get Free Estimate</a>
-                    <a href="tel:+19042044753" class="btn btn-outline-light btn-lg">
+                    <a href="/contact.html#contact" class="btn btn-primary btn-lg">Get Free Estimate</a>
+                    <a href="tel:+19042044753" class="btn btn--outline-light btn-lg">
                         <i class="ph ph-phone"></i> (904) 204-4753
                     </a>
                 </div>
@@ -251,60 +233,82 @@ gtag('config', 'G-ETEEE098BR');
         </section>
     </main>
 
-    <footer>
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-brand">
-                    <div class="logo">
-                        <span class="logo-icon"><i class="ph ph-drop"></i></span>
-                        <span class="logo-text">JAX Epoxy</span>
-                    </div>
-                    <p>Northeast Florida's trusted epoxy flooring experts. We transform garages, showrooms, and commercial spaces with durable, beautiful floors engineered for Florida's climate.</p>
-                    <p class="footer-license">FL Licensed Contractor</p>
-                </div>
-                <div class="footer-links">
-                    <h4>Services</h4>
-                    <ul>
-                        <li><a href="/services/garage-floor-epoxy.html">Garage Floor Epoxy</a></li>
-                        <li><a href="/services/metallic-epoxy.html">Metallic Epoxy Floors</a></li>
-                        <li><a href="/services/commercial-epoxy.html">Commercial Epoxy</a></li>
-                        <li><a href="/services/polyaspartic-coating.html">Polyaspartic Coating</a></li>
-                    </ul>
-                </div>
-                <div class="footer-links">
-                    <h4>Service Areas</h4>
-                    <ul>
-                        <li><a href="/">Jacksonville</a></li>
-                        <li><a href="/locations/orange-park.html">Orange Park</a></li>
-                        <li><a href="/locations/fleming-island.html">Fleming Island</a></li>
-                        <li><a href="/locations/st-augustine.html">St. Augustine</a></li>
-                        <li><a href="/locations/ponte-vedra.html">Ponte Vedra</a></li>
-                        <li><a href="/locations/fernandina-beach.html">Fernandina Beach</a></li>
-                    </ul>
-                </div>
-                <div class="footer-contact">
-                    <h4>Contact</h4>
-                    <a href="tel:+19042044753" class="footer-phone"><i class="ph ph-phone"></i> (904) 204-4753</a>
-                    <a href="mailto:info@904epoxyfloors.com" class="footer-email"><i class="ph ph-envelope"></i> info@904epoxyfloors.com</a>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2026 Jacksonville Epoxy Flooring Pros. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
-
-    <script src="../js/main.js"></script>
-    <div class="mobile-cta" id="mobile-cta">
-        <a href="tel:+19042044753" class="mobile-cta-call">📞 Call Now</a>
-        <a href="/#contact" class="mobile-cta-quote">Get Free Quote</a>
+    
+<footer class="footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div class="footer__col footer__col--brand">
+        <div class="footer__brand-name">JAX <span>Epoxy</span></div>
+        <p class="footer__brand-desc">Jacksonville&rsquo;s trusted epoxy flooring experts. Garage floors, metallic &amp; commercial coatings built for Florida&rsquo;s humidity. 15-year warranty on every job.</p>
+        <div class="footer__contact-item"><a href="tel:+19042044753">(904) 204-4753</a></div>
+        <div class="footer__contact-item"><a href="mailto:info@904epoxyfloors.com">info@904epoxyfloors.com</a></div>
+      </div>
+      <div class="footer__col">
+        <h4 class="footer__heading">Services</h4>
+        <ul class="footer__links">
+          <li><a href="/services/garage-floor-epoxy.html">Garage Floor Epoxy</a></li>
+          <li><a href="/services/metallic-epoxy.html">Metallic Epoxy</a></li>
+          <li><a href="/services/polyaspartic-coating.html">Polyaspartic Coating</a></li>
+          <li><a href="/services/commercial-epoxy.html">Commercial Epoxy</a></li>
+          <li><a href="/services/">All Services</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4 class="footer__heading">Service Areas</h4>
+        <ul class="footer__links">
+          <li><a href="/">Jacksonville</a></li>
+          <li><a href="/locations/orange-park.html">Orange Park</a></li>
+          <li><a href="/locations/fleming-island.html">Fleming Island</a></li>
+          <li><a href="/locations/st-augustine.html">St. Augustine</a></li>
+          <li><a href="/locations/ponte-vedra.html">Ponte Vedra</a></li>
+          <li><a href="/locations/fernandina-beach.html">Fernandina Beach</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4 class="footer__heading">Contact</h4>
+        <div class="footer__contact-item"><a href="tel:+19042044753">(904) 204-4753</a></div>
+        <div class="footer__contact-item">info@904epoxyfloors.com</div>
+        <div class="footer__contact-item">Jacksonville &amp; Northeast Florida</div>
+        <div class="footer__contact-item"><a href="/contact.html#contact">Get Free Estimate &rarr;</a></div>
+      </div>
     </div>
-    <style>
-    .mobile-cta{display:none;position:fixed;bottom:0;left:0;right:0;z-index:9999;background:#0f2744;padding:8px;gap:8px;box-shadow:0 -2px 10px rgba(0,0,0,.3)}
-    .mobile-cta a{flex:1;text-align:center;padding:12px 8px;border-radius:6px;font-family:'Inter',sans-serif;font-weight:600;font-size:.95rem;text-decoration:none}
-    .mobile-cta-call{background:#c9a227;color:#0f2744}
-    .mobile-cta-quote{background:#fff;color:#0f2744;border:2px solid #c9a227}
-    @media(max-width:768px){.mobile-cta{display:flex}body{padding-bottom:64px}}
-    </style>
+    <div class="footer__bottom">
+      <span class="footer__copy">&copy; 2026 Jacksonville Epoxy Flooring Pros. All rights reserved. FL Licensed Contractor.</span>
+      <div class="footer__legal">
+        <a href="/privacy-policy.html">Privacy Policy</a>
+        <a href="/sitemap.xml">Sitemap</a>
+      </div>
+    </div>
+  </div>
+</footer>
+<div class="mobile-cta">
+  <a href="tel:+19042044753" class="mobile-cta__btn mobile-cta__btn--call">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+    Call Now
+  </a>
+  <a href="/contact.html#contact" class="mobile-cta__btn mobile-cta__btn--estimate">Free Estimate</a>
+</div>
+<script>
+document.documentElement.classList.add("js");
+var nav=document.getElementById('nav');
+if(nav)window.addEventListener('scroll',function(){nav.classList.toggle('scrolled',window.scrollY>60)},{passive:true});
+var nt=document.getElementById('navToggle');
+if(nt)nt.addEventListener('click',function(){document.getElementById('navLinks').classList.toggle('open');});
+document.querySelectorAll('.faq__question').forEach(function(btn){
+  btn.addEventListener('click',function(){
+    var item=btn.closest('.faq__item');
+    var isOpen=item.classList.contains('active');
+    document.querySelectorAll('.faq__item').forEach(function(i){i.classList.remove('active');});
+    if(!isOpen)item.classList.add('active');
+  });
+});
+var revEls=document.querySelectorAll('.reveal');
+if(revEls.length){
+  var obs=new IntersectionObserver(function(entries){
+    entries.forEach(function(e){if(e.isIntersecting){e.target.classList.add('visible');obs.unobserve(e.target);}});
+  },{threshold:0.15});
+  revEls.forEach(function(el){obs.observe(el);});
+}
+</script>
 </body>
 </html>
