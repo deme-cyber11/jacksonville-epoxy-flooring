@@ -1,39 +1,39 @@
-/* style.v2.5.css — Jacksonville Epoxy Flooring | amber palette */
+/* style.v2.5.css — 904 Epoxy Floors (Jacksonville) | deep navy + gold */
 /* ============================================================
-   Huntsville HVAC Pros — v2.5 Design System
-   Shared CSS for all pages
+   Jacksonville Epoxy Flooring Pros — v2.5 Design System
+   Industrial + premium, dark-overlay hero, gold accents
    ============================================================ */
 
 /* ========== RESET & ROOT ========== */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 :root {
-  --color-primary: #1a1a2e;
-  --color-dark: #1a1a2e; /* alias — always equal to --color-primary */
-  --color-primary-light: #16213e;
+  --color-primary: #0f2744;
+  --color-dark: #0f2744; /* alias — always equal to --color-primary */
+  --color-primary-light: #163355;
   --color-surface: #f1f5f9;
   --color-surface-alt: #f8fafc;
   --color-white: #ffffff;
-  --color-accent: #f59e0b;
-  --color-accent-dark: #d97706;
-  --color-accent-glow: rgba(245, 158, 11, 0.3);
+  --color-accent: #c9a227;
+  --color-accent-dark: #a6841c;
+  --color-accent-glow: rgba(201, 162, 39, 0.32);
   --color-text: #1e293b;
   --color-text-light: #64748b;
   --color-text-white: #f1f5f9;
-  --color-dark-bg: #0f172a;
+  --color-dark-bg: #0a1b30;
   --color-dark-card: rgba(255, 255, 255, 0.06);
   --color-glass: rgba(255, 255, 255, 0.08);
-  --color-glass-border: rgba(255, 255, 255, 0.12);
-  --color-footer: #0a0e1a;
+  --color-glass-border: rgba(201, 162, 39, 0.22);
+  --color-footer: #07152a;
   --radius-sm: 8px;
   --radius-md: 12px;
   --radius-lg: 20px;
   --radius-xl: 28px;
-  --shadow-sm: 0 1px 3px rgba(0,0,0,0.08);
-  --shadow-md: 0 4px 20px rgba(0,0,0,0.1);
-  --shadow-lg: 0 8px 40px rgba(0,0,0,0.12);
+  --shadow-sm: 0 1px 3px rgba(10,27,48,0.10);
+  --shadow-md: 0 4px 20px rgba(10,27,48,0.14);
+  --shadow-lg: 0 8px 40px rgba(10,27,48,0.18);
   --shadow-glow: 0 0 30px var(--color-accent-glow);
-  --font-display: 'Inter', system-ui, sans-serif;
+  --font-display: 'Outfit', system-ui, sans-serif;
   --section-pad: clamp(64px, 8vw, 120px);
 }
 
@@ -173,6 +173,15 @@ html.js .reveal.visible {
 .reveal-delay-4 { transition-delay: 0.4s; }
 .reveal-delay-5 { transition-delay: 0.5s; }
 
+/* Visibility fallback — if IntersectionObserver never fires, force content visible after 2s */
+@keyframes visibility-fallback {
+  to { opacity: 1; transform: translateY(0); }
+}
+html.js .reveal {
+  animation: visibility-fallback 0.01s ease forwards;
+  animation-delay: 2s;
+}
+
 /* ========== 1. NAV ========== */
 .nav {
   position: fixed;
@@ -269,13 +278,22 @@ html.js .reveal.visible {
   overflow: hidden;
   padding: 120px 0 80px;
 }
+.hero::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(10,27,48,0.45) 0%, rgba(7,21,42,0.78) 100%);
+  z-index: 1;
+  pointer-events: none;
+}
 .hero__bg {
   position: absolute;
   inset: 0;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  opacity: 0.15;
+  opacity: 0.28;
+  filter: grayscale(0.15) contrast(1.05);
 }
 .hero__orb {
   position: absolute;
@@ -292,9 +310,10 @@ html.js .reveal.visible {
 }
 .hero__orb--2 {
   width: 300px; height: 300px;
-  background: #6366f1;
+  background: var(--color-primary-light);
   bottom: -80px; left: -60px;
   animation-delay: -3s;
+  opacity: 0.55;
 }
 .hero__orb--3 {
   width: 200px; height: 200px;
@@ -318,8 +337,8 @@ html.js .reveal.visible {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  background: rgba(245, 158, 11, 0.15);
-  border: 1px solid rgba(245, 158, 11, 0.3);
+  background: rgba(201, 162, 39, 0.14);
+  border: 1px solid rgba(201, 162, 39, 0.36);
   color: var(--color-accent);
   padding: 8px 20px;
   border-radius: 80px;
@@ -328,6 +347,7 @@ html.js .reveal.visible {
   margin-bottom: 24px;
   letter-spacing: 0.04em;
   text-transform: uppercase;
+  backdrop-filter: blur(6px);
 }
 .hero__title {
   font-size: clamp(2.75rem, 5vw + 1rem, 4.25rem);
@@ -338,7 +358,7 @@ html.js .reveal.visible {
   margin-bottom: 24px;
 }
 .hero__title span {
-  background: linear-gradient(135deg, var(--color-accent), #fbbf24);
+  background: linear-gradient(135deg, var(--color-accent) 0%, #e6c24a 60%, #fff3b0 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -722,12 +742,12 @@ html.js .reveal.visible {
 }
 .process__card:hover {
   transform: translateY(-6px);
-  border-color: rgba(245, 158, 11, 0.3);
+  border-color: rgba(201, 162, 39, 0.3);
 }
 .process__num {
   font-size: 3.5rem;
   font-weight: 900;
-  background: linear-gradient(135deg, var(--color-accent), #fbbf24);
+  background: linear-gradient(135deg, var(--color-accent), #e6c24a);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -737,7 +757,7 @@ html.js .reveal.visible {
 .process__icon {
   width: 52px;
   height: 52px;
-  background: rgba(245, 158, 11, 0.12);
+  background: rgba(201, 162, 39, 0.12);
   border-radius: var(--radius-md);
   display: flex;
   align-items: center;
@@ -847,10 +867,10 @@ html.js .reveal.visible {
   left: -200px;
   width: 500px;
   height: 500px;
-  background: #6366f1;
+  background: var(--color-accent);
   border-radius: 50%;
   filter: blur(150px);
-  opacity: 0.06;
+  opacity: 0.08;
 }
 .testimonials__header {
   text-align: center;
@@ -864,7 +884,7 @@ html.js .reveal.visible {
 }
 .testimonials__stars-rating {
   font-size: 2rem;
-  color: #fbbf24;
+  color: #e6c24a;
   letter-spacing: 4px;
   margin-bottom: 8px;
 }
@@ -890,10 +910,10 @@ html.js .reveal.visible {
 }
 .testimonial-card:hover {
   transform: translateY(-4px);
-  border-color: rgba(245, 158, 11, 0.25);
+  border-color: rgba(201, 162, 39, 0.25);
 }
 .testimonial-card__stars {
-  color: #fbbf24;
+  color: #e6c24a;
   font-size: 0.875rem;
   letter-spacing: 2px;
   margin-bottom: 16px;
@@ -915,7 +935,7 @@ html.js .reveal.visible {
   height: 44px;
   border-radius: 50%;
   object-fit: cover;
-  border: 2px solid rgba(245, 158, 11, 0.3);
+  border: 2px solid rgba(201, 162, 39, 0.3);
 }
 .testimonial-card__name {
   font-size: 0.9375rem;
@@ -1092,7 +1112,7 @@ html.js .reveal.visible {
 
 /* ========== 11. CTA GRADIENT ========== */
 .cta-section {
-  background: linear-gradient(135deg, var(--color-accent-dark) 0%, var(--color-accent) 50%, #38bdf8 100%);
+  background: linear-gradient(135deg, var(--color-accent-dark) 0%, var(--color-accent) 50%, #163355 100%);
   padding: var(--section-pad) 0;
   position: relative;
   overflow: hidden;
@@ -1425,7 +1445,7 @@ html.js .reveal.visible {
 .related-card__icon {
   width: 56px;
   height: 56px;
-  background: rgba(245, 158, 11, 0.1);
+  background: rgba(201, 162, 39, 0.1);
   border-radius: var(--radius-md);
   display: flex;
   align-items: center;
@@ -1591,7 +1611,7 @@ html.js .reveal.visible {
 .contact-form__detail-icon {
   width: 48px;
   height: 48px;
-  background: rgba(245, 158, 11, 0.1);
+  background: rgba(201, 162, 39, 0.1);
   border-radius: var(--radius-md);
   display: flex;
   align-items: center;
@@ -1707,7 +1727,7 @@ html.js .reveal.visible {
 .thankyou__icon {
   width: 80px;
   height: 80px;
-  background: rgba(245, 158, 11, 0.1);
+  background: rgba(201, 162, 39, 0.1);
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -1811,11 +1831,13 @@ html.js .reveal.visible {
   color: rgba(241,245,249,0.5);
   padding: 16px 0 0;
 }
-.breadcrumb__inner a {
-  color: rgba(241,245,249,0.5);
+.breadcrumb__inner a,
+.breadcrumb a {
+  color: rgba(241,245,249,0.7);
   transition: color 0.2s;
 }
-.breadcrumb__inner a:hover { color: var(--color-accent); }
+.breadcrumb__inner a:hover,
+.breadcrumb a:hover { color: var(--color-accent); }
 .breadcrumb__sep { opacity: 0.4; }
 
 /* ========== RESPONSIVE 2-COL GRID ========== */
@@ -1881,7 +1903,7 @@ html.js .reveal.visible {
   padding: 1.25rem 1.25rem 1.25rem;
   transition: transform 0.25s ease, border-color 0.25s ease;
 }
-.why__stat-card:hover { transform: translateY(-2px); border-color: rgba(245,158,11,0.35); }
+.why__stat-card:hover { transform: translateY(-2px); border-color: rgba(201, 162, 39, 0.35); }
 .why__stat-card strong {
   display: block;
   font-size: 1rem;
