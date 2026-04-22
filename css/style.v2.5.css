@@ -427,6 +427,12 @@ html.js .reveal {
   .hero__stats { gap: 32px; }
   .hero__stat-num { font-size: 1.75rem; }
 }
+@media (max-width: 480px) {
+  .hero { padding: 90px 0 48px; min-height: auto; }
+  .hero__buttons { margin-bottom: 32px; }
+  .hero__stats { gap: 20px; flex-wrap: nowrap; justify-content: space-between; }
+  .hero__stat-num { font-size: 1.5rem; }
+}
 
 /* Inner page hero (shorter) */
 .hero--inner {
