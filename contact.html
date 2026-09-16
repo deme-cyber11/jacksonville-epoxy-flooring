@@ -109,18 +109,26 @@
       </div>
       <div>
         <h2 class="section-title" style="color:var(--color-text);margin-bottom:2rem;">Request a Free Estimate</h2>
-        <form action="https://lead-manager-api.irontigerdigital.workers.dev/ingest" method="POST" style="display:flex;flex-direction:column;gap:1rem;">
+        <div id="form-success" style="display:none;background:#ecfdf5;border:1.5px solid #10b981;border-radius:10px;padding:20px;color:#065f46;margin-bottom:16px" role="status" aria-live="polite"><strong>Thanks — we got your request.</strong><br>We'll reach out shortly. Need us sooner? Call <a href="tel:9042044753">(904) 204-4753</a>.</div>
+<div id="form-error" style="display:none;background:#fef2f2;border:1.5px solid #ef4444;border-radius:10px;padding:20px;color:#7f1d1d;margin-bottom:16px" role="alert" aria-live="assertive"></div>
+        <form action="https://lead-manager-api.irontigerdigital.workers.dev/ingest" method="POST" style="display:flex;flex-direction:column;gap:1rem;" id="lead-form" data-success="form-success" data-error="form-error" data-strict="false" data-fallback-tel="(904) 204-4753">
+      <input type="hidden" name="site_domain" value="904epoxyfloors.com">
+      <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off" aria-hidden="true">
           <input type="hidden" name="_subject" value="New Estimate Request - Jacksonville Epoxy Flooring Pros">
-          <input type="hidden" name="redirect" value="https://904epoxyfloors.com/contact.html?success=1">
-          <input type="checkbox" name="botcheck" style="display:none">
+          <input type="hidden" name="_redirect" value="https://904epoxyfloors.com/contact.html#success">
+          
           <div class="why__stats">
-            <div><label style="display:block;font-size:.875rem;font-weight:600;margin-bottom:.5rem;color:var(--color-text);">Your Name *</label><input type="text" name="name" required placeholder="John Smith" class="form__input"></div>
-            <div><label style="display:block;font-size:.875rem;font-weight:600;margin-bottom:.5rem;color:var(--color-text);">Phone *</label><input type="tel" name="phone" required placeholder="(904) 204-4753" class="form__input"></div>
+            <div><label style="display:block;font-size:.875rem;font-weight:600;margin-bottom:.5rem;color:var(--color-text);">Your Name *</label><input type="text" name="name" required placeholder="John Smith" class="form__input" autocomplete="name" maxlength="80"></div>
+            <div><label style="display:block;font-size:.875rem;font-weight:600;margin-bottom:.5rem;color:var(--color-text);">Phone *</label><input type="tel" name="phone" required placeholder="(904) 204-4753" class="form__input" autocomplete="tel" inputmode="tel" maxlength="20" pattern="\+?1?[\s.\-]?\(?[0-9]{3}\)?[\s.\-]?[0-9]{3}[\s.\-]?[0-9]{4}" title="10-digit US phone number, e.g. (555) 123-4567"></div>
           </div>
-          <div><label style="display:block;font-size:.875rem;font-weight:600;margin-bottom:.5rem;color:var(--color-text);">Service Needed</label><select name="service" class="form__select"><option value="">Select a service...</option><option>Garage Floor Epoxy</option><option>Metallic Epoxy Floors</option><option>Polyaspartic Coating</option><option>Commercial Epoxy</option><option>Not Sure - Need Advice</option></select></div>
-          <div><label style="display:block;font-size:.875rem;font-weight:600;margin-bottom:.5rem;color:var(--color-text);">Email</label><input type="email" name="email" placeholder="you@example.com" class="form__input"></div>
-          <div><label style="display:block;font-size:.875rem;font-weight:600;margin-bottom:.5rem;color:var(--color-text);">Property Address</label><input type="text" name="address" placeholder="123 Main St, Jacksonville, FL" class="form__input"></div>
-          <div><label style="display:block;font-size:.875rem;font-weight:600;margin-bottom:.5rem;color:var(--color-text);">Describe Your Project</label><textarea name="message" rows="4" placeholder="Square footage, current floor condition, finish type..." class="form__textarea"></textarea></div>
+          <div><label style="display:block;font-size:.875rem;font-weight:600;margin-bottom:.5rem;color:var(--color-text);">Service Needed</label><select name="service" class="form__select" required><option value="">Select a service...</option><option>Garage Floor Epoxy</option><option>Metallic Epoxy Floors</option><option>Polyaspartic Coating</option><option>Commercial Epoxy</option><option>Not Sure - Need Advice</option></select></div>
+          <div><label style="display:block;font-size:.875rem;font-weight:600;margin-bottom:.5rem;color:var(--color-text);">How Soon Do You Need This? *</label><select id="timeline" name="timeline" class="form__input" required><option value="" disabled selected>Select one…</option><option>Emergency — today</option><option>ASAP — within a few days</option><option>Within 2 weeks</option><option>Within 1 month</option><option>1–3 months</option><option>Flexible / gathering quotes</option></select></div>
+          <div><label style="display:block;font-size:.875rem;font-weight:600;margin-bottom:.5rem;color:var(--color-text);">Email</label><input type="email" name="email" placeholder="you@example.com" class="form__input" required autocomplete="email" maxlength="120"></div>
+          <div><label style="display:block;font-size:.875rem;font-weight:600;margin-bottom:.5rem;color:var(--color-text);">Property Address</label><input type="text" name="address" placeholder="123 Main St, Jacksonville, FL" class="form__input" required autocomplete="address-line1" maxlength="120"></div>
+          <div><label style="display:block;font-size:.875rem;font-weight:600;margin-bottom:.5rem;color:var(--color-text);">City *</label><input type="text" id="city" name="city" class="form__input" required autocomplete="address-level2" maxlength="60"></div>
+          <div><label style="display:block;font-size:.875rem;font-weight:600;margin-bottom:.5rem;color:var(--color-text);">State</label><input type="text" id="state" name="state" class="form__input" autocomplete="address-level1" maxlength="2" pattern="[A-Za-z]{2}" title="2-letter state code"></div>
+          <div><label style="display:block;font-size:.875rem;font-weight:600;margin-bottom:.5rem;color:var(--color-text);">ZIP Code *</label><input type="text" id="zip" name="zip" class="form__input" required autocomplete="postal-code" inputmode="numeric" maxlength="10" pattern="[0-9]{5}(-[0-9]{4})?" title="5-digit ZIP"></div>
+          <div><label style="display:block;font-size:.875rem;font-weight:600;margin-bottom:.5rem;color:var(--color-text);">Describe Your Project</label><textarea name="message" rows="4" placeholder="Square footage, current floor condition, finish type..." class="form__textarea" required minlength="10" maxlength="2000"></textarea></div>
           <button type="submit" class="btn btn--primary" style="width:100%;justify-content:center;">Send Estimate Request &rarr;</button>
           <p style="font-size:.8125rem;color:var(--color-text-light);text-align:center;">We respond within 1 hour during business hours.</p>
         </form>
@@ -194,5 +202,6 @@ if(nav)window.addEventListener('scroll',function(){nav.classList.toggle('scrolle
 var nt=document.getElementById('navToggle');
 if(nt)nt.addEventListener('click',function(){document.getElementById('navLinks').classList.toggle('open');});
 </script>
+<script src="/js/form.js" defer></script>
 </body>
 </html>
