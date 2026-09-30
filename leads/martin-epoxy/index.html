@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jacksonville Epoxy Floors · Lead Packet · Martin Epoxy</title>
+<meta name="robots" content="noindex,nofollow">
+<meta name="theme-color" content="#1a1a2e">
+
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23e94560'/%3E%3Ctext x='32' y='44' font-family='system-ui' font-size='32' font-weight='800' text-anchor='middle' fill='%23fff'%3EITD%3C/text%3E%3C/svg%3E">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap">
+
+<style>
+:root {
+  --accent:      #e94560;
+  --accent-dark: #c73652;
+  --dark:        #1a1a2e;
+  --gray:        #5a5a5a;
+  --light:       #f1f5f9;
+  --border:      #dde1e8;
+  --badge-bg:    #fde8ec;
+  --badge-color: #c73652;
+  --urgent:      #b45309;
+}
+* { box-sizing: border-box; }
+body {
+  font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+  margin: 0;
+  background: var(--light);
+  color: var(--dark);
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+.wrap { max-width: 660px; margin: 0 auto; padding: 0 1.25rem 3rem; }
+
+header {
+  background: var(--dark);
+  color: #fff;
+  padding: 1rem 1.25rem;
+  text-align: center;
+  border-bottom: 4px solid var(--accent);
+}
+header .eyebrow {
+  font-size: .7rem;
+  letter-spacing: .15em;
+  text-transform: uppercase;
+  opacity: .7;
+  margin-bottom: .25rem;
+}
+header h1 {
+  margin: 0;
+  font-size: 1.15rem;
+  font-weight: 700;
+  letter-spacing: -.01em;
+}
+
+.hero {
+  background: linear-gradient(135deg, var(--accent), var(--accent-dark));
+  color: #fff;
+  padding: 1.75rem 1.5rem;
+  border-radius: 0 0 14px 14px;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+.hero .badge {
+  display: inline-block;
+  background: rgba(255,255,255,.18);
+  border: 1px solid rgba(255,255,255,.4);
+  padding: .25rem .7rem;
+  border-radius: 999px;
+  font-size: .72rem;
+  font-weight: 600;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  margin-bottom: .75rem;
+}
+.hero h2 { margin: 0 0 .35rem; font-size: 1.6rem; font-weight: 800; letter-spacing: -.02em; }
+.hero p  { margin: 0; opacity: .95; font-size: .95rem; }
+
+.summary-row {
+  display: flex;
+  gap: .75rem;
+  flex-wrap: wrap;
+  margin-bottom: 1.5rem;
+}
+.summary-stat {
+  flex: 1;
+  min-width: 110px;
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: .85rem 1rem;
+  text-align: center;
+}
+.summary-stat .val {
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: var(--accent);
+  line-height: 1;
+  margin-bottom: .2rem;
+}
+.summary-stat .lbl {
+  font-size: .72rem;
+  text-transform: uppercase;
+  letter-spacing: .06em;
+  color: var(--gray);
+  font-weight: 600;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1.25rem 1.4rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 1px 3px rgba(0,0,0,.04);
+}
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: .85rem;
+  gap: 1rem;
+}
+.card h3 {
+  margin: 0 0 .85rem;
+  font-size: .72rem;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--gray);
+  font-weight: 700;
+}
+.card-header h3 { margin: 0; }
+.lead-num {
+  font-size: .72rem;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #fff;
+  background: var(--accent);
+  padding: .25rem .6rem;
+  border-radius: 999px;
+  white-space: nowrap;
+}
+.lead-title {
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: var(--dark);
+  letter-spacing: -.01em;
+  margin: 0 0 .2rem;
+}
+.lead-sub {
+  font-size: .85rem;
+  color: var(--gray);
+  font-weight: 500;
+}
+
+.status {
+  display: inline-block;
+  padding: .2rem .6rem;
+  border-radius: 999px;
+  font-size: .72rem;
+  font-weight: 700;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+.status.urgent    { background: #fef3c7; color: var(--urgent); }
+.status.scheduled { background: #ede9fe; color: #6d28d9; }
+.status.flexible  { background: #d1fae5; color: #065f46; }
+
+.field { margin-bottom: .65rem; display: flex; gap: .8rem; align-items: baseline; }
+.field:last-child { margin-bottom: 0; }
+.field .label {
+  flex: 0 0 78px;
+  font-size: .78rem;
+  color: var(--gray);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: .04em;
+}
+.field .value {
+  flex: 1;
+  font-weight: 600;
+  font-size: 1rem;
+  color: var(--dark);
+  word-break: break-word;
+}
+.field .value a {
+  color: var(--accent-dark);
+  text-decoration: none;
+  border-bottom: 1px dashed var(--accent);
+}
+.field .value.urgent { color: var(--urgent); }
+.field .value .quiet {
+  display: block;
+  font-size: .8rem;
+  font-weight: 400;
+  color: var(--gray);
+  margin-top: .1rem;
+}
+
+.note {
+  background: var(--light);
+  border-left: 4px solid var(--accent);
+  padding: .85rem 1rem;
+  border-radius: 4px;
+  margin-top: .75rem;
+  font-style: italic;
+  color: #3a3a3a;
+  font-size: .9rem;
+}
+
+.photo-grid {
+  display: grid;
+  gap: .6rem;
+  margin-top: 1rem;
+}
+.photo-grid.one   { grid-template-columns: 1fr; }
+.photo-grid.two   { grid-template-columns: 2fr 1fr; }
+.photo-grid.three { grid-template-columns: 1.6fr 1fr 1fr; }
+@media (max-width: 520px) {
+  .photo-grid.two, .photo-grid.three { grid-template-columns: 1fr; }
+}
+.photo-grid figure {
+  margin: 0;
+  background: #f8f9fb;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  overflow: hidden;
+}
+.photo-grid img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4/3;
+  object-fit: cover;
+  cursor: zoom-in;
+  transition: opacity .15s;
+}
+.photo-grid img:hover { opacity: .9; }
+.photo-grid figcaption {
+  font-size: .75rem;
+  color: var(--gray);
+  padding: .5rem .75rem;
+  border-top: 1px solid var(--border);
+  font-weight: 500;
+}
+
+.cta-card {
+  background: var(--dark);
+  color: #fff;
+  padding: 1.5rem;
+  border-radius: 12px;
+  text-align: center;
+  margin-top: 1.5rem;
+}
+.cta-card h3 {
+  margin: 0 0 .5rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #fff;
+}
+.cta-card p { margin: 0 0 1rem; opacity: .85; font-size: .92rem; }
+.cta-btn {
+  display: inline-block;
+  background: var(--accent);
+  color: #fff;
+  text-decoration: none;
+  padding: .85rem 1.5rem;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 1rem;
+  letter-spacing: .01em;
+  margin: .25rem;
+  transition: background .15s;
+}
+.cta-btn:hover { background: var(--accent-dark); }
+.cta-btn.secondary {
+  background: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+}
+
+.terms {
+  font-size: .8rem;
+  color: var(--gray);
+  margin-top: 1.25rem;
+  padding: 1rem 1.25rem;
+  background: #fff;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+}
+.terms ul { margin: .5rem 0 0; padding-left: 1.1rem; }
+.terms li { margin-bottom: .25rem; }
+
+footer {
+  text-align: center;
+  font-size: .75rem;
+  color: var(--gray);
+  margin-top: 2rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--border);
+}
+footer strong { color: var(--accent-dark); }
+
+.timestamp {
+  display: inline-block;
+  background: var(--badge-bg);
+  color: var(--badge-color);
+  padding: .15rem .55rem;
+  border-radius: 999px;
+  font-size: .72rem;
+  font-weight: 700;
+  letter-spacing: .04em;
+}
+
+#lb {
+  display: none;
+  position: fixed; inset: 0;
+  background: rgba(8,14,22,.96);
+  z-index: 9999;
+  align-items: center; justify-content: center;
+  cursor: zoom-out;
+  padding: 2rem;
+}
+#lb.open { display: flex; }
+#lb img { max-width: 92vw; max-height: 90vh; object-fit: contain; box-shadow: 0 30px 80px rgba(0,0,0,.5); }
+
+/* ── Tab bar ── */
+.tab-bar {
+  display: flex;
+  gap: .5rem;
+  margin: 1.25rem 0 1rem;
+  border-bottom: 2px solid var(--border);
+  padding-bottom: 0;
+}
+.tab-btn {
+  padding: .55rem 1.1rem;
+  font-size: .82rem;
+  font-weight: 700;
+  border: none;
+  background: none;
+  cursor: pointer;
+  color: var(--gray);
+  border-bottom: 3px solid transparent;
+  margin-bottom: -2px;
+  border-radius: 4px 4px 0 0;
+  transition: color .15s, border-color .15s;
+  font-family: inherit;
+  letter-spacing: .02em;
+}
+.tab-btn.active {
+  color: var(--accent);
+  border-bottom-color: var(--accent);
+}
+.tab-panel { display: none; }
+.tab-panel.active { display: block; }
+
+/* ── Status board ── */
+.sb-row {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: .5rem 1rem;
+  align-items: center;
+  padding: .75rem 1rem;
+  border-bottom: 1px solid var(--border);
+  background: #fff;
+}
+.sb-row:first-child { border-radius: 10px 10px 0 0; }
+.sb-row:last-child { border-bottom: none; border-radius: 0 0 10px 10px; }
+.sb-name { font-weight: 700; font-size: .88rem; }
+.sb-desc { font-size: .75rem; color: var(--gray); margin-top: .1rem; }
+.sb-badge {
+  padding: .3rem .75rem;
+  border-radius: 999px;
+  font-size: .72rem;
+  font-weight: 700;
+  cursor: pointer;
+  white-space: nowrap;
+  border: none;
+  font-family: inherit;
+  letter-spacing: .03em;
+  transition: opacity .15s;
+  user-select: none;
+}
+.sb-badge:active { opacity: .75; }
+.sb-badge[data-status="Active"]        { background: #d1fae5; color: #065f46; }
+.sb-badge[data-status="Contacted"]     { background: #dbeafe; color: #1e40af; }
+.sb-badge[data-status="Quote Sent"]    { background: #fef3c7; color: #92400e; }
+.sb-badge[data-status="Closed / Lost"] { background: #fee2e2; color: #991b1b; }
+.sb-wrap {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 12px rgba(0,0,0,.07);
+  overflow: hidden;
+  margin-top: .5rem;
+}
+.sb-header {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: .5rem 1rem;
+  padding: .5rem 1rem;
+  background: var(--dark);
+  color: rgba(255,255,255,.6);
+  font-size: .68rem;
+  font-weight: 700;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+.sb-hint {
+  font-size: .72rem;
+  color: var(--gray);
+  text-align: center;
+  margin-top: .75rem;
+}
+.sb-badge.sb-saving{opacity:.55}.sb-badge.sb-error{background:#fdecea!important;color:#b42318!important;border-color:#b42318!important}
+</style>
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+</head>
+<body>
+
+<header>
+  <div class="eyebrow">Iron Tiger Digital</div>
+  <h1>Jacksonville, FL · Epoxy Floor Coatings · Lead Packet</h1>
+</header>
+
+<div class="wrap">
+
+<div class="hero">
+  <span class="badge">Prepared for Jamin Martin, Martin Epoxy</span>
+  <h2>Jacksonville Epoxy Floor Leads</h2>
+  <p><span id="stat-intro">1</span> inbound homeowner inquiry in the Jacksonville area, with verified contact info and the full project scope.</p>
+</div>
+
+<div class="summary-row">
+  <div class="summary-stat"><div class="val" id="stat-total">1</div><div class="lbl">Total leads</div></div>
+  <div class="summary-stat"><div class="val" id="stat-finish">1</div><div class="lbl">Polyaspartic / polyurea</div></div>
+</div>
+
+<div class="tab-bar">
+  <button class="tab-btn active" onclick="switchTab('leads')">Lead Details</button>
+  <button class="tab-btn" onclick="switchTab('status')">Status Board</button>
+</div>
+
+<div id="tab-leads" class="tab-panel active">
+
+<!-- Lead: John Ryan -->
+<div class="card">
+  <div class="card-header">
+    <div>
+      <div class="lead-title">John Ryan</div>
+      <div class="lead-sub">Jacksonville, FL 32223 · Polyaspartic coating · 875 sq ft garage, solid color</div>
+    </div>
+    <div style="display:flex;flex-direction:column;align-items:flex-end;gap:.4rem">
+      <span class="status urgent">Within 2 weeks</span>
+    </div>
+  </div>
+
+  <div class="field">
+    <span class="label">Contact</span>
+    <span class="value">John Ryan<br>
+      <a href="tel:19047075355">(904) 707-5355</a>
+      <span class="quiet"><a href="mailto:johntiv@bellsouth.net">johntiv@bellsouth.net</a></span></span>
+  </div>
+  <div class="field">
+    <span class="label">Address</span>
+    <span class="value">12337 Brady Manor Way, Jacksonville, FL 32223</span>
+  </div>
+  <div class="field">
+    <span class="label">Service</span>
+    <span class="value">Polyaspartic coating, premium solid-color garage floor (no flakes)</span>
+  </div>
+  <div class="field">
+    <span class="label">Size</span>
+    <span class="value">About 875 sq ft garage</span>
+  </div>
+  <div class="field">
+    <span class="label">Timeline</span>
+    <span class="value">Within 2 weeks</span>
+  </div>
+  <div class="field">
+    <span class="label">Source</span>
+    <span class="value">904epoxyfloors.com, inbound estimate form</span>
+  </div>
+  <div class="field">
+    <span class="label">Received</span>
+    <span class="value">September 30, 2026</span>
+  </div>
+  <div class="note"><strong>Homeowner's request:</strong> I have approximately 875 square feet of garage space. I do not want flakes. I want a premium solid-color floor. I'm looking for mechanically diamond-ground concrete, a polyurea base, a substantial 100% solids pigmented epoxy build coat, and a UV-stable polyaspartic/polyurea clear topcoat. Please quote the exact products, manufacturers, mil thicknesses and warranty.</div>
+  <div class="note"><strong>Tip for the call:</strong> He knows the system he wants and asked for specifics in writing. A quote that names the products, mil thickness per coat and warranty terms is what wins this one. He wants it done within 2 weeks, so the first contractor to call has the edge.</div>
+</div>
+
+<div class="cta-card">
+  <h3>Questions? Ready to move on this lead?</h3>
+  <p>Reply to the email or call Costa directly. The first contractor to call has the best shot at the job.</p>
+  <a href="mailto:contact@irontigerdigital.com?subject=Jacksonville%20Epoxy%20Leads%20-%20Martin%20Epoxy%20Packet&body=Hi%20Costa%2C%20I%27d%20like%20to%20follow%20up%20on%20the%20lead%20packet." class="cta-btn">Email Costa</a>
+  <a href="tel:+15129567133" class="cta-btn secondary">Call (512) 956-7133</a>
+</div>
+
+</div><!-- /#tab-leads -->
+
+<div id="tab-status" class="tab-panel">
+  <div class="sb-wrap">
+    <div class="sb-header"><span>Lead</span><span>Status</span></div>
+    <div class="sb-row">
+      <div><div class="sb-name">John Ryan</div><div class="sb-desc">12337 Brady Manor Way, Jacksonville · Polyaspartic, 875 sq ft, solid color</div></div>
+      <button class="sb-badge" data-id="john-ryan" data-status="Active" onclick="cycleStatus(this)">Active</button>
+    </div>
+  </div>
+  <p class="sb-hint">Tap a status to cycle: Active, Contacted, Quote Sent, Closed / Lost. It saves for everyone with this link, on any device.</p>
+</div><!-- /#tab-status -->
+
+<div class="terms">
+  <strong>About these leads:</strong>
+  <ul>
+    <li>I own 904epoxyfloors.com and a network of home-service lead sites. Jacksonville homeowners find the site on Google and call or fill out the estimate form.</li>
+    <li>I'm looking for one reliable epoxy and polyaspartic contractor in Jacksonville to be my go-to for this lead flow. Each lead goes to you only.</li>
+    <li>Your first 3 leads are free. After that, leads are $35 each as they come in, billed weekly. No contract, no monthly fee.</li>
+    <li>Please call each lead within 24 hours and mark it on the Status Board.</li>
+  </ul>
+</div>
+
+<footer>
+  Iron Tiger Digital &nbsp;·&nbsp; <strong>contact@irontigerdigital.com</strong> &nbsp;·&nbsp; (512) 956-7133 &nbsp;·&nbsp; Lead ID: JAX-EPOXY-2026-09-30
+</footer>
+
+</div>
+
+<div id="lb" onclick="closeLb()">
+  <img id="lb-img" src="" alt="">
+</div>
+
+<script>
+function openLb(img) {
+  document.getElementById('lb-img').src = img.src;
+  document.getElementById('lb-img').alt = img.alt;
+  document.getElementById('lb').classList.add('open');
+}
+function closeLb() {
+  document.getElementById('lb').classList.remove('open');
+  document.getElementById('lb-img').src = '';
+}
+document.addEventListener('keydown', function(e) { if (e.key === 'Escape') closeLb(); });
+
+// Tab switching
+function switchTab(name) {
+  document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
+  document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+  document.getElementById('tab-' + name).classList.add('active');
+  event.currentTarget.classList.add('active');
+}
+
+// ── Status board — saved to the server so every device and every person
+// with this link sees the same thing. ─────────────────────────────────────
+// 2026-09-16: the previous version sent the PIN in a place the server did not
+// read, so EVERY save was rejected — and it never checked the response, so the
+// new status was painted from this browser's local storage and looked saved.
+// It was only ever saved on the device that clicked. Now: the server is the
+// source of truth (strongly consistent D1), every save is checked, a failed
+// save reverts and says so, and open pages refresh themselves.
+var STATUSES = ['Active', 'Contacted', 'Quote Sent', 'Closed / Lost'];
+var LS_PREFIX = 'martin-epoxy-sb-';
+var API = 'https://lead-manager-api.irontigerdigital.workers.dev/api/packet-status?pin=3636';
+var PACKET = 'martin-epoxy';
+var pending = {};  // id -> true while a save is in flight (don't let a poll overwrite it)
+
+function paint(btn, status, note) {
+  btn.dataset.status = status;
+  btn.textContent = status;
+  btn.classList.remove('sb-saving', 'sb-error');
+  if (note === 'saving') btn.classList.add('sb-saving');
+  if (note === 'error') { btn.classList.add('sb-error'); btn.textContent = status + ' — not saved, tap to retry'; }
+}
+
+function save(btn, status, at) {
+  var id = btn.dataset.id;
+  pending[id] = true;
+  return fetch(API, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ pin: '3636', packet: PACKET, id: id, status: status, at: at })
+  })
+    .then(function (r) { return r.json().then(function (j) { if (!r.ok || !j.ok) throw new Error(j.error || r.status); return j; }); })
+    .then(function (j) {
+      delete pending[id];
+      paint(btn, j.status);            // server's answer wins (it may be newer)
+      try { localStorage.setItem(LS_PREFIX + id, j.status); } catch (e) {}
+      return true;
+    })
+    .catch(function () {
+      delete pending[id];
+      paint(btn, status, 'error');
+      btn.dataset.retry = status;
+      return false;
+    });
+}
+
+function cycleStatus(btn) {
+  var id = btn.dataset.id;
+  if (pending[id]) return;
+  var base = btn.dataset.retry || btn.dataset.status;
+  var next = btn.dataset.retry ? base : STATUSES[(STATUSES.indexOf(base) + 1) % STATUSES.length];
+  delete btn.dataset.retry;
+  var prev = btn.dataset.status;
+  paint(btn, next, 'saving');
+  save(btn, next, Date.now()).then(function (ok) {
+    if (!ok) btn.dataset.prev = prev;
+  });
+}
+
+function refresh() {
+  return fetch(API + '&packet=' + PACKET + '&cb=' + Date.now())
+    .then(function (r) { return r.json(); })
+    .then(function (data) {
+      var remote = (data && data.statuses) || {};
+      document.querySelectorAll('.sb-badge').forEach(function (btn) {
+        var id = btn.dataset.id;
+        if (pending[id] || btn.dataset.retry) return;
+        if (remote[id] && STATUSES.indexOf(remote[id]) > -1) {
+          paint(btn, remote[id]);
+          try { localStorage.setItem(LS_PREFIX + id, remote[id]); } catch (e) {}
+        }
+      });
+      return remote;
+    });
+}
+
+// Load: paint the cached value instantly, then let the server correct it.
+document.querySelectorAll('.sb-badge').forEach(function (btn) {
+  try {
+    var cached = localStorage.getItem(LS_PREFIX + btn.dataset.id);
+    if (cached && STATUSES.indexOf(cached) > -1) paint(btn, cached);
+  } catch (e) {}
+});
+refresh().then(function (remote) {
+  // One-time rescue: statuses set on this device that never reached the server
+  // (every save before the fix). Sent with at=0 so they can NEVER override a
+  // value someone saved on the server since.
+  document.querySelectorAll('.sb-badge').forEach(function (btn) {
+    var id = btn.dataset.id, cached = null;
+    try { cached = localStorage.getItem(LS_PREFIX + id); } catch (e) {}
+    if (cached && cached !== 'Active' && !remote[id] && STATUSES.indexOf(cached) > -1) save(btn, cached, 0);
+  });
+}).catch(function () {});
+
+// Keep every open copy of this page in sync.
+setInterval(function () { if (!document.hidden) refresh().catch(function () {}); }, 20000);
+document.addEventListener('visibilitychange', function () { if (!document.hidden) refresh().catch(function () {}); });
+</script>
+
+<script>
+(function () {
+  var cards = document.querySelectorAll('#tab-leads .card');
+  var total = cards.length;
+  if (!total) return;                       // never blank the page out on a selector change
+  var finish = 0;
+  for (var i = 0; i < cards.length; i++) {
+    if (/polyaspartic|polyurea/i.test(cards[i].textContent || '')) finish++;
+  }
+  var set = function (id, v) { var el = document.getElementById(id); if (el) el.textContent = v; };
+  set('stat-total', total);
+  set('stat-intro', total);
+  set('stat-finish', finish);
+})();
+</script>
+</body>
+</html>
