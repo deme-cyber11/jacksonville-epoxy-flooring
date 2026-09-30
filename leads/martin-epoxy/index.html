@@ -686,10 +686,22 @@ setInterval(function () { if (!document.hidden) refresh().catch(function () {});
 document.addEventListener('visibilitychange', function () { if (!document.hidden) refresh().catch(function () {}); });
 // ── Per-lead notes (2026-09-30) ──
 // One note per lead, saved on the server (/api/packet-notes) so it shows on every device.
+// The Notes button is added to every row by script, so rows added later get one too.
 var NOTES_API = 'https://lead-manager-api.irontigerdigital.workers.dev/api/packet-notes';
 var notes = {};         // id -> { note, at }
 var noteDirty = {};     // id -> true while the box is open with unsaved typing
 
+function ensureNoteButtons() {
+  document.querySelectorAll('.sb-row .sb-badge').forEach(function (badge) {
+    var row = badge.closest('.sb-row');
+    if (row.querySelector('.sb-note-btn')) return;
+    var b = document.createElement('button');
+    b.type = 'button'; b.className = 'sb-note-btn'; b.setAttribute('aria-expanded', 'false');
+    b.innerHTML = '<span class="dot"></span>Notes';
+    b.onclick = function () { toggleNote(b); };
+    badge.parentNode.insertBefore(b, badge);
+  });
+}
 function noteRow(el) { return el.closest('.sb-row'); }
 function noteBtnFor(row) { return row.querySelector('.sb-note-btn'); }
 function noteId(row) { return row.querySelector('.sb-badge').dataset.id; }
@@ -707,7 +719,7 @@ function notePanel(row) {
   if (panel) return panel;
   panel = document.createElement('div');
   panel.className = 'sb-note-panel';
-  panel.innerHTML = '<textarea placeholder="Called, left voicemail. Quote sent for $2,400. Follow up Friday."></textarea>' +
+  panel.innerHTML = '<textarea placeholder="Called, left voicemail. Quote sent. Follow up Friday."></textarea>' +
     '<div class="sb-note-actions"><button type="button" class="sb-note-save">Save</button>' +
     '<button type="button" class="sb-note-cancel">Close</button><span class="sb-note-msg"></span></div>';
   row.appendChild(panel);
@@ -779,6 +791,7 @@ function refreshNotes() {
       });
     });
 }
+ensureNoteButtons();
 refreshNotes().catch(function () {});
 setInterval(function () { if (!document.hidden) refreshNotes().catch(function () {}); }, 20000);
 document.addEventListener('visibilitychange', function () { if (!document.hidden) refreshNotes().catch(function () {}); });
