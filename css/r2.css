@@ -1,0 +1,209 @@
+/* 904 Epoxy Floors: round 2 (2026-10-01). Loaded LAST on every page.
+   Light touch: the site's own look is kept. This file only holds
+   (1) solid SVG star sizing (replaced the star glyphs),
+   (2) real defect fixes (about hero overlay, invisible outline buttons on light cards, blog index menu),
+   (3) the readable article column for blog posts and the privacy page (body.r2-article),
+   (4) phone and tablet fixes, all inside media queries so desktop is unchanged. */
+
+/* 1. Stars */
+.r2-star { width: 1em; height: 1em; display: inline-block; vertical-align: -0.12em; fill: currentColor; }
+.testimonials__stars-rating .r2-star, .testimonial-card__stars .r2-star { margin-right: 2px; }
+
+/* 2. Defect fixes */
+/* about.html: the hero ::after overlay (z-index 1) painted over the hero content (also z-index 1) */
+.hero > .container { position: relative; z-index: 2 !important; }
+/* outline buttons sitting on light cards were white text on a light background */
+.r2-on-light.btn--outline,
+section[style*="padding: 5rem 0"] div[style*="background: var(--color-surface)"] .btn--outline,
+.location-cta .btn--outline, .location-cta .btn--outline-light {
+  color: var(--color-primary) !important; border-color: rgba(15, 39, 68, 0.35) !important;
+}
+/* blog index toggles .nav__links--open; the stylesheet only knew .open */
+@media (max-width: 768px) {
+  .nav__links.nav__links--open {
+    display: flex; flex-direction: column; position: absolute; top: 100%; left: 0; right: 0;
+    background: rgba(15, 23, 42, 0.95); backdrop-filter: blur(20px); padding: 24px; gap: 20px;
+  }
+}
+
+/* 3. Article column (blog posts, privacy) */
+body.r2-article { font-family: var(--font-display); }
+.r2-article main > .location-content,
+.r2-article .legal-content { padding: 72px 0 88px; background: #fff; }
+.r2-article .location-content > .container { max-width: 1200px !important; }
+.r2-article .location-text,
+.r2-article .legal-content { max-width: 740px; margin: 0 auto; color: #334155; font-size: 1.0625rem; line-height: 1.8; }
+.r2-article .legal-content { padding-left: 24px; padding-right: 24px; box-sizing: content-box; }
+.r2-article .location-text > p,
+.r2-article .legal-content > p { margin: 0 0 1.25em; }
+.r2-article .location-text > p:first-child,
+.r2-article .location-text > div:first-child + p { font-size: 1.1875rem; line-height: 1.75; color: #1e293b; }
+.r2-article .location-text h2,
+.r2-article .legal-content h2 {
+  font-size: clamp(1.45rem, 2.4vw, 1.85rem); line-height: 1.25; font-weight: 800; letter-spacing: -0.02em;
+  color: var(--color-primary); margin: 2.4em 0 0.75em; padding-left: 16px; border-left: 4px solid var(--color-accent);
+}
+.r2-article .location-text h3,
+.r2-article .legal-content h3 { font-size: 1.2rem; line-height: 1.35; font-weight: 700; color: var(--color-primary); margin: 1.8em 0 0.5em; }
+.r2-article .location-text ul, .r2-article .location-text ol,
+.r2-article .legal-content ul, .r2-article .legal-content ol { margin: 0.5em 0 1.4em 1.25em !important; padding-left: 0.5em; line-height: 1.75 !important; }
+.r2-article .location-text li, .r2-article .legal-content li { margin-bottom: 0.5em; list-style: disc; }
+.r2-article .location-text li::marker, .r2-article .legal-content li::marker { color: var(--color-accent); }
+.r2-article .location-text a:not(.btn), .r2-article .legal-content a:not(.btn) { color: #8a6d12; text-decoration: underline; text-underline-offset: 3px; }
+.r2-article .location-text strong { color: #0f172a; }
+/* quick-answer callout (first div in the cost guide) */
+.r2-article .location-text > div[style*="border-left"] { border-radius: 0 12px 12px 0; padding: 18px 22px !important; margin-bottom: 2rem !important; }
+/* in-article quote box */
+.r2-article .location-cta { background: var(--color-surface) !important; border: 1px solid #e2e8f0; border-radius: 16px !important; padding: 28px 32px !important; }
+.r2-article .location-cta h3 { margin-top: 0; }
+/* dark in-article CTA card */
+.r2-article .location-text > div[style*="#0f2744"] { border-radius: 20px !important; padding: 44px 40px !important; }
+.r2-article .location-text > div[style*="#0f2744"] h2 { border: 0; padding: 0; margin: 0 0 0.6em; }
+.r2-article .location-text > div[style*="#0f2744"] .btn--outline-light { color: #fff; border: 2px solid rgba(255,255,255,0.35); }
+/* buttons the posts used but the stylesheet never defined */
+.r2-article .btn-primary { background: var(--color-accent); color: #fff; box-shadow: 0 4px 20px var(--color-accent-glow); }
+.r2-article .btn-primary:hover { background: var(--color-accent-dark); }
+.r2-article .btn-lg { padding: 16px 32px; }
+/* FAQ inside the article */
+.r2-article .faq-list { display: grid; gap: 12px; margin: 1em 0 2em; }
+.r2-article .faq-item { background: var(--color-surface); border: 1px solid #e2e8f0; border-radius: 14px; padding: 20px 24px; }
+.r2-article .faq-question { font-size: 1.0625rem !important; font-weight: 700; color: var(--color-primary); margin: 0 0 0.5em; }
+.r2-article .faq-question .ph { display: none; }
+.r2-article .faq-answer, .r2-article .faq-answer p { display: block !important; max-height: none !important; opacity: 1 !important; margin: 0; font-size: 1rem; }
+/* closing CTA band of the cost guide */
+.r2-article .cta-banner { background: var(--color-primary); color: #fff; padding: 72px 0; text-align: center; }
+.r2-article .cta-banner h2 { color: #fff; font-size: clamp(1.6rem, 3vw, 2.25rem); font-weight: 800; letter-spacing: -0.02em; margin-bottom: 0.5em; }
+.r2-article .cta-banner p { color: rgba(255,255,255,0.8); margin-bottom: 1.6em; }
+.r2-article .cta-banner .cta-buttons { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
+.r2-article .cta-banner .btn--outline, .r2-article .cta-banner .btn--outline-light, .r2-article .cta-banner a[href^="tel:"]:not(.btn--primary):not(.btn-primary) { color: #fff; border: 2px solid rgba(255,255,255,0.35); }
+/* related reading */
+.r2-article .location-text > div[style*="border-top"] { font-size: 0.975rem; }
+/* privacy header */
+.r2-article .page-header { background: linear-gradient(135deg, #0f2744 0%, #1a3a6b 100%); color: #fff; text-align: center; padding: 150px 24px 72px; }
+.r2-article .page-header h1 { color: #fff; font-size: clamp(2rem, 4.5vw, 3rem); font-weight: 900; letter-spacing: -0.03em; margin-bottom: 0.4em; }
+.r2-article .page-header p { color: rgba(255,255,255,0.82); font-size: 1.125rem; }
+.r2-article .last-updated { background: var(--color-surface); border-radius: 10px; padding: 12px 18px; margin-bottom: 1.5em; font-size: 0.95rem; }
+.r2-article .nav { background: rgba(15, 23, 42, 0.92); }
+
+/* 4. Phone and tablet (desktop untouched) */
+@media (max-width: 1100px) and (hover: none) {
+  .nav__logo { display: inline-flex; align-items: center; min-height: 44px; }
+  .nav__links a { display: inline-flex; align-items: center; min-height: 44px; }
+  .nav__cta { min-height: 44px; }
+  a[href^="tel:"], .footer__links a, .footer__bottom a, .footer__contact-item a, .footer a { display: inline-flex; align-items: center; min-height: 44px; }
+  .btn, .mobile-cta__btn { min-height: 48px; }
+  .nav__toggle { min-width: 44px; min-height: 44px; }
+}
+@media (max-width: 768px) {
+  .nav__links.open a, .nav__links.nav__links--open a { min-height: 44px; display: flex; align-items: center; }
+  .nav__inner { flex-wrap: nowrap; min-width: 0; }
+  .nav__logo { white-space: nowrap; }
+  .footer__links li { margin-bottom: 0; }
+  .r2-article main > .location-content, .r2-article .legal-content { padding-top: 48px; padding-bottom: 64px; }
+  .r2-article .location-text, .r2-article .legal-content { font-size: 1rem; }
+  .r2-article .location-text > div[style*="#0f2744"] { padding: 32px 22px !important; }
+  .r2-article .location-cta { padding: 22px 20px !important; }
+  .r2-article .page-header { padding: 120px 20px 56px; }
+}
+@media (max-width: 480px) {
+  /* hero stat chips and contact text below 15px on phones */
+  .contact-info p, .contact-info li, .contact__info p { font-size: 15px; }
+}
+
+/* Estimate page header: logo now links home, three plain links so the page is not a dead end */
+.r2-est-links { display: flex; gap: 22px; margin-left: auto; margin-right: 22px; }
+.r2-est-links a { color: rgba(255,255,255,0.85); font-weight: 600; font-size: 0.9375rem; display: inline-flex; align-items: center; min-height: 44px; }
+.r2-est-links a:hover { color: #fff; }
+@media (max-width: 600px) {
+  body.r2 > .nav { flex-wrap: wrap; row-gap: 2px; }
+  .r2-est-links { order: 3; width: 100%; margin: 0; justify-content: space-between; gap: 8px; }
+  .r2-est-links a { font-size: 15px; }
+}
+@media (hover: none) {
+  body.r2 > .nav > .nav__cta { display: inline-flex; align-items: center; min-height: 44px; }
+  body.r2 > .nav > .nav__logo { display: inline-flex; align-items: center; min-height: 44px; }
+}
+
+/* About page: inline grids had no phone/tablet rules (the sidebar card pushed the page 130px sideways) */
+@media (max-width: 900px) {
+  body.r2 main div[style*="grid-template-columns: 1fr 1fr; gap: 4rem"] { grid-template-columns: 1fr !important; gap: 2.5rem !important; }
+}
+@media (max-width: 768px) {
+  body.r2 main div[style*="grid-template-columns: repeat(4, 1fr)"] { grid-template-columns: 1fr 1fr !important; row-gap: 1.75rem !important; }
+  body.r2 main .process-grid-about { grid-template-columns: 1fr !important; gap: 1.25rem !important; }
+}
+@media (max-width: 380px) {
+  body.r2 main div[style*="grid-template-columns: 1fr 1fr; gap: 0.5rem 1rem"] { grid-template-columns: 1fr !important; }
+}
+
+/* Article FAQ question buttons: full-width rows, comfortable tap height */
+.r2-article .faq-question { width: 100%; text-align: left; background: none; border: 0; padding: 0; min-height: 44px; display: flex; align-items: center; cursor: default; font-family: inherit; line-height: 1.35; }
+
+/* Touch: breadcrumbs, desktop-width nav links on touch tablets, estimate checkboxes, small print */
+@media (max-width: 1100px) and (hover: none) {
+  .breadcrumb a, .breadcrumbs a, nav[aria-label="Breadcrumb"] a, .hero__breadcrumb a { display: inline-flex; align-items: center; min-height: 44px; }
+  .nav__links a { min-width: 44px; justify-content: center; }
+  .check-item input[type=checkbox] { -webkit-appearance: none !important; appearance: none !important; width: 40px !important; height: 40px !important; min-width: 40px !important; margin: -10px -6px -10px -10px !important; border-radius: 8px !important; cursor: pointer;
+    background: linear-gradient(#fff, #fff) center / 16px 16px no-repeat, linear-gradient(#94a3b8, #94a3b8) center / 20px 20px no-repeat !important; }
+  .check-item input[type=checkbox]:checked {
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='white'%3E%3Cpath fill-rule='evenodd' d='M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z' clip-rule='evenodd'/%3E%3C/svg%3E") center / 14px 14px no-repeat, linear-gradient(#c9a227, #c9a227) center / 20px 20px no-repeat !important; }
+  .check-item input[type=checkbox]:focus-visible { outline: 2px solid #c9a227; outline-offset: -8px; }
+}
+@media (max-width: 480px) {
+  body.r2 > footer p, body.r2 p[style*="font-size:.8125rem"] { font-size: 15px !important; }
+}
+@media (max-width: 1100px) and (hover: none) {
+  .breadcrumb a { min-width: 44px; justify-content: center; }
+  .faq-question { min-height: 48px; }
+}
+@media (max-width: 480px) {
+  body.r2 > .footer p, body.r2 > div.footer p { font-size: 15px; }
+}
+
+/* Location pages: 7 service-area links in a 3-column grid left one orphan; 4 + 3 instead */
+@media (min-width: 769px) {
+  .areas-we-serve ul:has(> li:nth-child(7):last-child) { grid-template-columns: repeat(4, 1fr) !important; }
+}
+/* About hero: 100vh with short centred copy left a 320px empty band */
+body.r2 main > section.hero[style*="padding: 7rem 0 5rem"] { min-height: 72vh; }
+/* logo is a flex box on touch screens: keep the word space */
+.nav__logo { column-gap: 0.28em; }
+/* stretched buttons: centre the label (text-align does nothing on an inline-flex button) */
+body.r2 .btn { justify-content: center; }
+
+/* Location pages: the breadcrumb sat in normal flow under the transparent fixed nav, an 800px dark strip
+   with white page showing either side (the white logo vanished, "Contact" was cut off). It now sits
+   inside the top of the hero, full width, below the nav. */
+body.r2 > nav.breadcrumb { position: absolute; top: 76px; left: 0; right: 0; z-index: 5; max-width: 1200px; margin: 0 auto; padding: 0 24px; background: transparent; color: rgba(241, 245, 249, 0.72); font-size: 0.875rem; }
+body.r2 > nav.breadcrumb span { color: rgba(241, 245, 249, 0.72); }
+body.r2 > nav.breadcrumb + section.hero { padding-top: 136px; }
+@media (max-width: 768px) {
+  body.r2 > nav.breadcrumb { top: 64px; padding: 0 20px; }
+  body.r2 > nav.breadcrumb + section.hero { padding-top: 124px; }
+}
+
+/* Service pages use the same article column. Their process cards, checklists and section CTA band
+   referenced a stylesheet (styles.v1.css) the pages never load, so they rendered as bare text. */
+.r2-article .location-grid { display: block; }
+.r2-article .process-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 1.5rem 0 2rem !important; }
+.r2-article .process-card { position: relative; background: var(--color-surface); border: 1px solid #e2e8f0; border-radius: 16px; padding: 22px 22px 20px 74px; }
+.r2-article .process-card h3 { margin: 0 0 0.35em; font-size: 1.075rem; }
+.r2-article .process-card p { margin: 0; font-size: 0.975rem; line-height: 1.65; }
+.r2-article .process-number { position: absolute; left: 20px; top: 20px; width: 38px; height: 38px; border-radius: 50%; background: var(--color-primary); color: var(--color-accent); font-weight: 800; display: flex; align-items: center; justify-content: center; font-size: 1rem; }
+.r2-article .process-grid > p { grid-column: 1 / -1; margin: 0; background: var(--color-surface); border: 1px solid #e2e8f0; border-radius: 16px; padding: 18px 22px; }
+.r2-article ul.services-checklist { list-style: none; margin: 0.5em 0 1.6em !important; padding: 0; }
+.r2-article ul.services-checklist li { list-style: none; position: relative; padding-left: 30px; }
+.r2-article ul.services-checklist li::before { content: ""; position: absolute; left: 0; top: 0.38em; width: 18px; height: 18px; border-radius: 50%; background: var(--color-accent) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='white'%3E%3Cpath fill-rule='evenodd' d='M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z' clip-rule='evenodd'/%3E%3C/svg%3E") center / 12px 12px no-repeat; }
+.r2-article .location-cta .btn { margin: 4px 8px 4px 0; }
+.r2-article .btn--secondary, .r2-article .btn-secondary { background: var(--color-primary); color: #fff; }
+@media (max-width: 640px) {
+  .r2-article .process-grid { grid-template-columns: 1fr; }
+}
+
+/* Scroll-reveal: content always visible (the fade left blank bands in captures and on slow phones) */
+.reveal, .js .reveal, .reveal:not(.visible), .reveal:not(.is-visible) { opacity: 1 !important; transform: none !important; animation: none !important; }
+@media (max-width: 768px) {
+  body.r2 main > section[style*="padding: 5rem 0"] { padding-top: 3.5rem !important; padding-bottom: 3.5rem !important; }
+  .r2-article main > .location-content { padding-bottom: 40px; }
+  .r2-article .cta-banner { padding: 56px 0; }
+}
