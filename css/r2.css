@@ -238,3 +238,7 @@ section.why > .container > div[style*="max-width:860px"] ul { margin: 0 0 1.2em 
 section.why > .container > div[style*="max-width:860px"] li { margin-bottom: 0.4em; line-height: 1.65; }
 /* 404: white nav links and logo sat on a white page */
 .error-page .nav { background: var(--color-primary); }
+/* Location price tables: with the site font loaded the 3-column table ran 9px past a 360px screen */
+@media (max-width: 420px) {
+  .location-content .pricing-table th, .location-content .pricing-table td { padding: 9px 6px; font-size: 0.875rem; }
+}
